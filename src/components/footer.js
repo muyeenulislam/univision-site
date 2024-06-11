@@ -1,12 +1,31 @@
 import React from "react";
 import Image from "next/image";
+import { Popover } from "antd";
 
 import Spacer from "./spacer";
 
 const Footer = () => {
+  const socialItems = [
+    {
+      title: "Facebook",
+      link: "https://www.facebook.com/profile.php?id=61558909776746",
+      icon: "/images/facebook.svg",
+    },
+    { title: "Instagram", link: "#", icon: "/images/instagram.svg" },
+    {
+      title: "LinkedIn",
+      link: "https://www.linkedin.com/company/visionedtechsolutions/",
+      icon: "/images/linkedin.svg",
+    },
+    {
+      title: "Youtube",
+      link: "https://www.youtube.com/@VisionEdTechSolutions",
+      icon: "/images/youtube.svg",
+    },
+  ];
   return (
     <div className="w-full flex flex-col bg-gradient-to-r from-[#03544C] to-[#02312C] text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5">
         <div className="flex flex-col p-5">
           <Image src={"/images/logo.png"} alt="" height={66} width={320} />
           <Spacer height="8px" />
@@ -52,7 +71,7 @@ const Footer = () => {
             <b>Karachi, Pakistan</b>
           </div>
         </div>
-        <div className="w-max mx-auto p-5 flex flex-col">
+        <div className="w-max lg:mx-auto p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Legal</div>
           <Spacer height="20px" />
           <a href="/privacy-policy" className="underline">
@@ -63,9 +82,30 @@ const Footer = () => {
             Terms and Conditions
           </a>
         </div>
-        <div className="w-max mx-auto p-5 flex flex-col">
+        <div className="w-max lg:mx-auto p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Follow Us</div>
           <Spacer height="20px" />
+          <div className="flex gap-1">
+            {socialItems?.map((item, index) => (
+              <Popover content={<>UniVision</>} key={index}>
+                <a href={item?.link} target="_blank">
+                  <Image src={item?.icon} height={34} width={34} alt="fb" />
+                </a>
+              </Popover>
+            ))}
+          </div>
+          <Spacer height="60px" />
+          <div className=" text-[28px] font-semibold">Contact Us</div>
+          <Spacer height="20px" />
+          <div className="flex gap-1">
+            <Image src={"/images/phone.svg"} height={18} width={18} alt="fb" />
+            <div>+971 58 539 9043</div>
+          </div>
+          <Spacer height="10px" />
+          <div className="flex gap-1">
+            <Image src={"/images/email.svg"} height={18} width={18} alt="fb" />
+            <a href="mailto:admin@univision.hk">admin@univision.hk</a>
+          </div>
         </div>
       </div>
       <div className=" text-[20px] text-center p-5 border-t border-white">
