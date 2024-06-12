@@ -94,7 +94,12 @@ const Navbar = () => {
       }`}
     >
       <a href="/">
-        <Image src={"/images/logo.png"} alt="" height={35} width={196} />
+        <Image
+          src={scroll ? "/images/logo-green.png" : "/images/logo.png"}
+          alt=""
+          height={35}
+          width={196}
+        />
       </a>
       {screenSize.width > 1175 ? (
         <div className="flex justify-center items-center gap-6">

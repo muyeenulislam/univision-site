@@ -8,6 +8,7 @@ import WhiteButton from "@/components/buttons/whitebutton";
 import PrimaryButton from "@/components/buttons/primarybutton";
 import ForInstitutions from "@/components/home/forinstitutions";
 import ForStudents from "@/components/home/forstudents";
+import CoreFeatures from "@/components/home/core-features";
 
 import Spacer from "@/utils/spacer";
 
@@ -39,7 +40,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-[url('/images/home-cover.png')] w-full bg-cover bg-center ">
+      <div className="bg-[url('/images/home-cover.png')] w-full bg-no-repeat bg-cover">
         <div className="flex justify-between items-center px-[50px] md:px-[120px] py-[170px]">
           <div className="flex flex-col gap-5 w-full lg:w-[40%]">
             <div className="text-white text-[40px] md:text-[60px] font-extrabold ">
@@ -85,8 +86,8 @@ export default function Home() {
         />
       </div>
       <Spacer height="20px" />
-      <div className="bg-[url('/images/core-features-bg.svg')] w-full bg-cover bg-center ">
-        <Spacer height="40px" />
+      <div className="bg-[url('/images/core-features-bg.svg')] w-full bg-no-repeat bg-cover">
+        <Spacer height="100px" />
         <div className="flex justify-center items-center flex-col">
           <div className="section-header px-[50px] md:px-[120px]">
             Core Features
@@ -95,6 +96,8 @@ export default function Home() {
           <div className="text-[32px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
             A centralized ecosystem for schools
           </div>
+          <Spacer height="50px" />
+          <CoreFeatures />
           <Spacer height="50px" />
         </div>
       </div>
