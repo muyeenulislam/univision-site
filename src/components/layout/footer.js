@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Popover } from "antd";
 
-import Spacer from "./spacer";
+import Spacer from "../../utils/spacer";
 
 const Footer = () => {
   const socialItems = [
@@ -26,25 +26,32 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-col bg-gradient-to-r from-[#03544C] to-[#02312C] text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5">
-        <div className="flex flex-col p-5">
-          <Image src={"/images/logo.png"} alt="" height={66} width={320} />
+        <div className="flex flex-col items-center p-5">
+          <div className="relative w-full h-[66px]">
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
           <Spacer height="8px" />
-          <div className="text-white text-[22px]">
+          <div className="text-white text-[20px] sm:text-[22px]">
             Your Dream, Our Responsibility
           </div>
           <Spacer height="20px" />
-          <div className="flex gap-1 flex-wrap">
+          <div className="flex justify-between flex-wrap w-full max-w-[295px] gap-1">
             <Image
               src={"/images/google-play.png"}
               alt=""
-              height={60}
-              width={160}
+              height={40}
+              width={140}
             />
             <Image
               src={"/images/app-store.png"}
               alt=""
-              height={60}
-              width={160}
+              height={40}
+              width={140}
             />
           </div>
         </div>
@@ -87,7 +94,7 @@ const Footer = () => {
           <Spacer height="20px" />
           <div className="flex gap-1">
             {socialItems?.map((item, index) => (
-              <Popover content={<>UniVision</>} key={index}>
+              <Popover content={<>UniVision</>} key={index} trigger="hover">
                 <a href={item?.link} target="_blank">
                   <Image src={item?.icon} height={34} width={34} alt="fb" />
                 </a>

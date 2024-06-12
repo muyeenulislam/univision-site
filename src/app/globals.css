@@ -13,3 +13,16 @@ body {
   font-weight: 800;
   text-align: center;
 }
+
+:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-top
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-bottom
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-top
+  > div
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-bottom
+  > div
+  > .ant-tabs-nav::before {
+  border: none !important;
+}

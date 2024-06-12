@@ -36,57 +36,82 @@ const Navbar = () => {
 
   const items = [
     {
-      label: <a href="/">Home</a>,
+      label: (
+        <a href="/" className="text-[18px] font-semibold p-2">
+          Home
+        </a>
+      ),
       key: "0",
     },
     {
-      label: <a href="/careers">Careers</a>,
+      label: (
+        <a href="/careers" className="text-[18px] font-semibold p-2">
+          Careers
+        </a>
+      ),
       key: "1",
     },
     {
-      label: <a href="/our-team">Our Team</a>,
+      label: (
+        <a href="/our-team" className="text-[18px] font-semibold p-2">
+          Our Team
+        </a>
+      ),
       key: "1",
     },
     {
-      label: <a href="/contact-us">Contact us</a>,
+      label: (
+        <a href="/contact-us" className="text-[18px] font-semibold p-2">
+          Contact us
+        </a>
+      ),
       key: "1",
     },
     {
-      label: <a href="/signup-guide">Sign Up Guide</a>,
+      label: (
+        <a href="/signup-guide" className="text-[18px] font-semibold p-2">
+          Sign Up Guide
+        </a>
+      ),
       key: "1",
     },
     {
-      label: <a href="/explore">Explore Now</a>,
+      label: (
+        <a href="/explore" className="text-[18px] font-semibold p-2">
+          Explore Now
+        </a>
+      ),
       key: "1",
     },
   ];
 
   return (
     <navbar
-      className={`flex justify-between items-center fixed w-full px-[50px] md:px-[120px] py-5 transition-all duration-300 ${
+      className={`flex justify-between items-center fixed w-full px-[50px] md:px-[120px] py-5 transition-all duration-300 z-[1000] ${
         scroll
-          ? "bg-white bg-opacity-80 text-black"
+          ? "bg-white bg-opacity-80 text-black backdrop-blur-md shadow-md"
           : "bg-transparent text-white"
       }`}
     >
-      <div onClick={() => router.push("/")}>
+      <a href="/">
         <Image src={"/images/logo.png"} alt="" height={35} width={196} />
-      </div>
+      </a>
       {screenSize.width > 1175 ? (
         <div className="flex justify-center items-center gap-6">
           {navbarItem?.map((item, index) => (
-            <div
+            <a
               key={index}
-              className={`text-[18px] ${
+              href={item.key}
+              className={`text-[18px] hover:text-primary transition-all ${
                 item?.key === "/explore"
-                  ? "bg-white text-primary px-5 py-2 rounded-full shadow-sm"
+                  ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg"
                   : scroll
                   ? "text-black"
                   : "text-white"
               }`}
             >
               {item?.label}
-            </div>
+            </a>
           ))}
         </div>
       ) : (

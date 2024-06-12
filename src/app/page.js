@@ -2,15 +2,18 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import { Tabs, ConfigProvider } from "antd";
+import { Tabs } from "antd";
 
-import WhiteButton from "@/components/whitebutton";
-import PrimaryButton from "@/components/primarybutton";
-import Spacer from "@/components/spacer";
+import WhiteButton from "@/components/buttons/whitebutton";
+import PrimaryButton from "@/components/buttons/primarybutton";
+import ForInstitutions from "@/components/home/forinstitutions";
+import ForStudents from "@/components/home/forstudents";
+
+import Spacer from "@/utils/spacer";
 
 export default function Home() {
   const [activeKey, setActiveKey] = useState("1");
-  console.log(activeKey);
+
   const items = [
     {
       key: "1",
@@ -20,7 +23,7 @@ export default function Home() {
         ) : (
           <WhiteButton text="For Students" />
         ),
-      children: "Content of Tab Pane 1",
+      children: <ForStudents />,
     },
     {
       key: "2",
@@ -30,7 +33,7 @@ export default function Home() {
         ) : (
           <WhiteButton text="For Institutions" />
         ),
-      children: "Content of Tab Pane 2",
+      children: <ForInstitutions />,
     },
   ];
 
@@ -62,31 +65,38 @@ export default function Home() {
         </div>
       </div>
       <Spacer height="20px" />
-      <div className="flex justify-center items-center flex-col px-[50px] md:px-[120px] ">
-        <div className="section-header">Our Products</div>
+      <div className="flex justify-center items-center flex-col">
+        <div className="section-header px-[50px] md:px-[120px]">
+          Our Products
+        </div>
         <Spacer height="20px" />
-        <div className="text-[32px] font-normal leading-[39px] text-center">
+        <div className="text-[32px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
           UniVision is an EdTech solution providing you with everything you need
           to know about your prospective universities.
         </div>
         <Spacer height="20px" />
-        <ConfigProvider
-          theme={{
-            components: {
-              Tabs: {
-                inkBarColor: "white",
-                itemActiveColor: "white",
-              },
-            },
-          }}
-        >
-          <Tabs
-            defaultActiveKey="1"
-            items={items}
-            animated
-            onChange={(e) => setActiveKey(e)}
-          />
-        </ConfigProvider>
+
+        <Tabs
+          defaultActiveKey="1"
+          items={items}
+          animated
+          centered
+          onChange={(e) => setActiveKey(e)}
+        />
+      </div>
+      <Spacer height="20px" />
+      <div className="bg-[url('/images/core-features-bg.svg')] w-full bg-cover bg-center ">
+        <Spacer height="40px" />
+        <div className="flex justify-center items-center flex-col">
+          <div className="section-header px-[50px] md:px-[120px]">
+            Core Features
+          </div>
+          <Spacer height="20px" />
+          <div className="text-[32px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
+            A centralized ecosystem for schools
+          </div>
+          <Spacer height="50px" />
+        </div>
       </div>
     </div>
   );
