@@ -75,7 +75,7 @@ export default function Home() {
           UniVision is an EdTech solution providing you with everything you need
           to know about your prospective universities.
         </div>
-        <Spacer height="20px" />
+        <Spacer height="50px" />
 
         <Tabs
           defaultActiveKey="1"

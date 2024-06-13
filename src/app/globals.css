@@ -27,17 +27,11 @@ body {
   border: none !important;
 }
 
-:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-top
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-bottom
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-top
-  > div
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-bottom
-  > div
-  > .ant-tabs-nav::before {
-  border-bottom: none !important;
+.ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+  border: none !important;
 }
 
 .react-tel-input .form-control {
