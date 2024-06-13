@@ -27,6 +27,19 @@ body {
   border: none !important;
 }
 
+:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-top
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-bottom
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-top
+  > div
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs-bottom
+  > div
+  > .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
 .react-tel-input .form-control {
   font-size: 14px !important;
   background: #ffffff !important;
@@ -89,4 +102,28 @@ body {
 
 .fade-in-right {
   animation: fadeInFromRight 1s ease-out;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c5c5c500;
+  width: 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
