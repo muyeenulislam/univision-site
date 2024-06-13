@@ -119,7 +119,7 @@ const ForStudents = () => {
             </div>
           ))}
           <div className="w-full text-center md:text-left">
-            <PrimaryButton text="Download" />
+            <PrimaryButton text="Download" width="300px" />
           </div>
         </div>
       </div>
@@ -166,7 +166,12 @@ const ForStudents = () => {
             </div>
           ))}
           <div className="w-full text-center md:text-left">
-            <PrimaryButton text="Sign up" />
+            <a
+              href="https://student.univision.hk/signup/personalInfo"
+              target="_blank"
+            >
+              <PrimaryButton text="Sign up" width="300px" />
+            </a>
           </div>
         </div>
         <div className="w-full flex justify-center items-center z-10">

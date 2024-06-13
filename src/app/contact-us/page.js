@@ -31,93 +31,99 @@ const ContactUs = () => {
 
   const collapseItemsLeft = [
     {
-      title: "asdassdfsdfsdfsdf",
-      desc: "asdwefkygsdfkjhsfklsahfsdf",
+      title: "What is the purpose of this product?",
+      desc: "A 2019 frequency analysis of the most common words in use on social media by Streem sawthe use of ‘uncertain times’ increase by 3155% and ‘unprecedented’ by 210%, especially as a pseudo one-size-fits-all reason to justify policies and mandates related to universities and higher education (Pash, 2020; Thomson, 2021). One of the groups hit hardest by the events of the last four years have been prospective applicants for higher education, as backlogged applications,border policies, tougher stances on international movements and missed opportunities with regards to extracurriculars and other activities have made searching for and selecting best-fit colleges tougher than ever, especially for Asian students. UniVision is focused on rectifying this issue and supporting students in pursuing their dreams of higher education by providing information and access to services that facilitate the university shortlisting process through an integrated system that allows students to access information from universities around the worldand communicate with their guidance counselors with ease.",
       key: "1",
     },
     {
-      title: "asdassdfsdfsdfsdf",
-      desc: "asdwefkygsdfkjhsfklsahfsdf",
+      title:
+        " What is the purpose of having UniVision providing this information when everything is already available online?",
+      desc: "Recent estimates from Common App, the main portal for undergraduate admissions in the United States suggest that 2021 saw the number of college applicants rise by 13% and the total applications submitted increase by 22%. This trend of increased interest in tertiary education has been prevalent all throughout the twenty-first century and most speculate that it will only continue to rise as an undergraduate degree starts becoming the minimum requirement for careers.\nHowever, the application process for undergraduate studies is perhaps one of the most challenging decisions faced by high school students, especially as they try to narrow down the best choices for them to apply to. Not every student is lucky enough to have access to in-house college counselors and more often than not, students end up paying out of pocket to recruit the services of extremely expensive college counselors with no guarantee of finding the best fit college for them.\nThe gap between the increased interest in tertiary education and the lack of personalized guidance opportunities for students is the main impetus behind UniVision – a guidance platform for college search and selection aimed at supporting students who are determined to go to university but don’t know where to begin. The goal of UniVision is to provide opportunities for students to discover and explore universities from around the world as they decide where they want to apply, with a focus on serving communities that don’t typically have access to such platforms or facilities.",
       key: "2",
     },
     {
-      title: "asdassdfsdfsdfsdf",
-      desc: "asdwefkygsdfkjhsfklsahfsdf",
+      title:
+        "How does the School Web Portal help the schools during the college application season?",
+      desc: "Apart from assisting students in searching for and selecting universities, UniVision also provides an admin portal that allows counselors and other school administrators to organize and store information about a student's application in one place to help them help their students.\nSome of the features offered by the UniVision Admin beta are\n● Organized sections of information on colleges from around the world for easy access\n● A list of all the students and their shortlist universities\n● In-app options to set meetings and discuss applications",
       key: "3",
     },
   ];
 
   const collapseItemsRight = [
     {
-      title: "asdassdfsdfsdfsdf",
-      desc: "asdwefkygsdfkjhsfklsahfsdf",
+      title: "How did you come up with the idea of UniVision?",
+      desc: "The initial idea for UniVision stemmed from discussions between the co-founders about their respective experiences with the university search and selection process. Upon realizing how much of our experiences mirrored each other, we collectively realized that there was a clear gap in the market for products that would help high school students search more efficiently and accurately for their universities, without schools or students needing to pay obscene prices out of pocket. That eventually led to the birth of UniVision as a solution for students by students, with a young team consisting of university students and recent graduates across a wide variety of disciplines.",
       key: "4",
     },
     {
-      title: "asdassdfsdfsdfsdf",
-      desc: "asdwefkygsdfkjhsfklsahfsdf",
+      title: "What does the Student Web/Mobile App help with?",
+      desc: " UniVision is a platform aimed at reducing the choice paralysis that often marks the beginning stages of any student’s college search and selection process, especially for those students who lack in-house guidance opportunities or have a skewed counselor to student ratio. UniVision provides students with access to information about universities from around the world in a streamlined and organized manner, with both a portable mobile app and a desktop version to ensure that students can work on their search and selection process anywhere and anytime.\nSome of the features offered by the UniVision beta are\n● Organized sections of information on colleges from around the world for easy access\n● A watchlist option to select and save universities you’re interested in\n● The ability to compare universities across multiple data points to find your best fit",
       key: "5",
     },
   ];
 
   return (
-    <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-      <div className="h-full px-[30px] lg:px-[120px] py-[120px]">
-        <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
-          <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
-            <div className="text-primary text-[27px]">Contact Us</div>
-            <Spacer height="35px" />
-            <div className="section-header" style={{ textAlign: "left" }}>
-              Get in touch
+    <div>
+      <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
+        <div className="h-full px-[30px] lg:px-[120px] pt-[120px]">
+          <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
+            <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
+              <div className="text-primary text-[27px]">Contact Us</div>
+              <Spacer height="35px" />
+              <div className="section-header" style={{ textAlign: "left" }}>
+                Get in touch
+              </div>
+              <Spacer height="35px" />
+              <InputGroupText
+                text="Name"
+                placeholder="Enter your name"
+                handleChange={(e) => setState({ ...state, name: e })}
+                value={state?.name}
+              />
+              <Spacer height="35px" />
+              <InputGroupText
+                text="Email"
+                placeholder="Enter your email address"
+                handleChange={(e) => setState({ ...state, email: e })}
+                value={state?.email}
+              />
+              <Spacer height="35px" />
+              <InputGroupPhone
+                text="Phone Number"
+                placeholder="Enter your phone number"
+                handleChange={(e) => setState({ ...state, phone: e })}
+                value={state?.phone}
+              />
+              <Spacer height="35px" />
+              <InputGroupTextbox
+                text="Message"
+                placeholder="Enter your message"
+                handleChange={(e) => setState({ ...state, message: e })}
+                value={state?.message}
+              />
+              <Spacer height="35px" />
+              <div>
+                <PrimaryButton text="Submit" width="100%" />
+              </div>
             </div>
-            <Spacer height="35px" />
-            <InputGroupText
-              text="Name"
-              placeholder="Enter your name"
-              handleChange={(e) => setState({ ...state, name: e })}
-              value={state?.name}
-            />
-            <Spacer height="35px" />
-            <InputGroupText
-              text="Email"
-              placeholder="Enter your email address"
-              handleChange={(e) => setState({ ...state, email: e })}
-              value={state?.email}
-            />
-            <Spacer height="35px" />
-            <InputGroupPhone
-              text="Phone Number"
-              placeholder="Enter your phone number"
-              handleChange={(e) => setState({ ...state, phone: e })}
-              value={state?.phone}
-            />
-            <Spacer height="35px" />
-            <InputGroupTextbox
-              text="Message"
-              placeholder="Enter your message"
-              handleChange={(e) => setState({ ...state, message: e })}
-              value={state?.message}
-            />
-            <Spacer height="35px" />
-            <div>
-              <PrimaryButton text="Submit" width="100%" />
-            </div>
+            <div
+              className={`bg-[url('/images/contact-us-banner.jpg')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px] ${
+                screenSize?.width < 768 ? "h-[600px]" : ""
+              } `}
+            ></div>
           </div>
-          <div
-            className={`bg-[url('/images/contact-us-banner.png')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px] ${
-              screenSize?.width < 768 ? "h-[600px]" : ""
-            } `}
-          ></div>
-        </div>
 
-        <Spacer height="100px" />
+          <Spacer height="100px" />
+        </div>
+      </div>
+      <div className="px-[30px] lg:px-[120px] ">
         <div className="section-header">You Ask. We Answer.</div>
         <Spacer height="80px" />
         <div className="text-[22px] text-[#707070]">
           Others frequently ask.....
         </div>
         <Spacer height="20px" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-black">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 text-black">
           <ConfigProvider
             theme={{
               token: {
@@ -149,7 +155,16 @@ const ContactUs = () => {
                           {item?.title}
                         </p>
                       ),
-                      children: <p className="text-[#707070]">{item?.desc}</p>,
+                      children: (
+                        <p className="text-[#707070]">
+                          {item?.desc?.split("\n").map((line, index) => (
+                            <span key={index}>
+                              {line}
+                              <br />
+                            </span>
+                          ))}
+                        </p>
+                      ),
                     },
                   ]}
                   expandIconPosition={"end"}
@@ -191,7 +206,16 @@ const ContactUs = () => {
                           {item?.title}
                         </p>
                       ),
-                      children: <p className="text-[#707070]">{item?.desc}</p>,
+                      children: (
+                        <p className="text-[#707070]">
+                          {item?.desc?.split("\n").map((line, index) => (
+                            <span key={index}>
+                              {line}
+                              <br />
+                            </span>
+                          ))}
+                        </p>
+                      ),
                     },
                   ]}
                   expandIconPosition={"end"}
@@ -218,6 +242,7 @@ const ContactUs = () => {
           </ConfigProvider>
         </div>
       </div>
+      <Spacer height="80px" />
     </div>
   );
 };

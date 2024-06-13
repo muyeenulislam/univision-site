@@ -79,7 +79,7 @@ const Footer = () => {
             Privacy Policy
           </a>
           <Spacer height="15px" />
-          <a href="/terms-n-conditions" className="underline">
+          <a href="/terms-and-conditions" className="underline">
             Terms and Conditions
           </a>
         </div>

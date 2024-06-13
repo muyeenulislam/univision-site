@@ -37,3 +37,15 @@ body {
   border: none !important;
   box-shadow: none !important;
 }
+
+:where(.css-dev-only-do-not-override-6cel9w).ant-collapse
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-expand-icon {
+  height: 22px !important;
+  width: 60px !important;
+  display: flex !important;
+  align-items: center !important;
+
+  justify-content: flex-end !important;
+}

@@ -11,15 +11,20 @@ const OurTeam = () => {
       role: "Co-founder & CEO",
       image: "/images/jahangir.png",
     },
-    // {
-    //   name: "Faraz Amin",
-    //   role: "Co-founder & CTO",
-    //   image: "/images/faraz.png",
-    // },
     {
       name: "Murtaza Abedin",
       role: "Strategic Advisor",
       image: "/images/murtaza.png",
+    },
+    {
+      name: "Md. Muyeen - Ul - Islam",
+      role: "Head of Technology",
+      image: "/images/muyeen.jpg",
+    },
+    {
+      name: "Sameer Asad",
+      role: "Chief Information Officer (CIO)",
+      image: "/images/muyeen.jpg",
     },
   ];
   return (
@@ -44,13 +49,19 @@ const OurTeam = () => {
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex justify-center items-center gap-3 flex-wrap">
+      <div className="flex justify-center items-center gap-4 p-2 flex-wrap">
         {teamInfo?.map((item, index) => (
           <div
             key={index}
             className="flex flex-col justify-center items-center gap-1"
           >
-            <Image src={item?.image} height={340} width={340} alt="" />
+            <Image
+              src={item?.image}
+              height={340}
+              width={340}
+              alt=""
+              className="rounded-[36px] border border-primary"
+            />
             <div className="text-[21px] font-semibold uppercase">
               {item?.name}
             </div>
@@ -60,10 +71,15 @@ const OurTeam = () => {
       </div>
       <Spacer height="40px" />
       <div className="flex items-center justify-center px-2">
-        <PrimaryButton
-          text="Meet the rest of our team on LinkedIn"
-          width="400px"
-        />
+        <a
+          href="https://www.linkedin.com/company/visionedtechsolutions/"
+          target="_blank"
+        >
+          <PrimaryButton
+            text="Meet the rest of our team on LinkedIn"
+            width="450px"
+          />
+        </a>
       </div>
       <Spacer height="140px" />
     </div>
