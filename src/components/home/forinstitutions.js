@@ -56,7 +56,7 @@ const ForInstitutions = () => {
   ];
 
   return (
-    <div className="flex flex-col relative px-[50px] md:px-[120px] text-black overflow-hidden">
+    <div className="flex flex-col relative px-[50px] md:px-[120px] text-black overflow-hidden fade-in-right">
       {screenSize?.width > 1024 && (
         <div className="absolute h-[100%] right-[50%]">
           <Image

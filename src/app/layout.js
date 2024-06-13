@@ -49,7 +49,7 @@ export default function RootLayout({ children }) {
           },
         }}
       >
-        <body className={montserrat.className}>
+        <body className={`${montserrat.className} relative mt-[-83px]`}>
           <Navbar />
           <div>{children}</div>
           <Footer />

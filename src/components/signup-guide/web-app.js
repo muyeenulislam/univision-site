@@ -132,7 +132,7 @@ const WebAppSignup = () => {
     },
   ];
   return (
-    <div className="relative px-[50px] md:px-[120px] overflow-hidden">
+    <div className="relative px-[50px] md:px-[120px] overflow-hidden fade-in-right">
       <div className="absolute top-[450px] right-[-250px]">
         <Image
           src={"/images/signup-ellipse.svg"}
@@ -184,7 +184,7 @@ const WebAppSignup = () => {
           {stepsSchoolStudent?.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row gap-5 ${
+              className={`flex flex-col-reverse md:flex-row gap-5 ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               } justify-between `}
             >
@@ -207,7 +207,7 @@ const WebAppSignup = () => {
           {stepsIndividualStudent?.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row ${
+              className={`flex flex-col-reverse md:flex-row ${
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               } justify-between`}
             >

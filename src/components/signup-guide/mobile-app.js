@@ -187,7 +187,7 @@ const MobileAppSignup = () => {
     },
   ];
   return (
-    <div className="relative px-[50px] md:px-[80px] lg:px-[150px] overflow-hidden">
+    <div className="relative px-[50px] md:px-[80px] lg:px-[150px] overflow-hidden fade-in-left">
       <div className="absolute top-[450px] right-[-250px]">
         <Image
           src={"/images/signup-ellipse.svg"}
@@ -237,8 +237,9 @@ const MobileAppSignup = () => {
       >
         <div className="relative z-[100]">
           <div className="text-primary text-[42px] lg:text-[56px] xl:text-[71px] font-bold max-w-[550px] text-center md:text-left">
-            Register As School Student
+            Register as School Student
           </div>
+          <Spacer height="50px" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {stepsSchoolStudent?.map((item, index) => (
               <div
@@ -271,15 +272,15 @@ const MobileAppSignup = () => {
         </div>
         <Spacer height="60px" />
         <div className="relative z-[100]">
-          <div className="text-primary text-[42px] lg:text-[56px] xl:text-[71px] font-bold max-w-[650px] text-center md:text-left ">
-            Register As Individual Student
+          <div className="text-primary text-[42px] lg:text-[56px] xl:text-[71px] font-bold max-w-[550px] text-center md:text-left">
+            Register as Individual Student
           </div>
           <Spacer height="50px" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {stepsIndividualStudent?.map((item, index) => (
               <div
                 key={index}
-                className={`flex flex-col  gap-5 ${
+                className={`flex flex-col-reverse  gap-5 ${
                   index === 1 || index === 3 || index === 5
                     ? "sm:flex-row"
                     : "sm:flex-row-reverse"
