@@ -39,8 +39,8 @@ export default function RootLayout({ children }) {
         theme={{
           components: {
             Tabs: {
-              inkBarColor: "white",
-              itemActiveColor: "white",
+              inkBarColor: "transparent",
+              itemActiveColor: "transparent",
             },
           },
           token: {

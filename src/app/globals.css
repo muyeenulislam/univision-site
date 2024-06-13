@@ -49,3 +49,9 @@ body {
 
   justify-content: flex-end !important;
 }
+
+:where(.css-dev-only-do-not-override-kmfgz).ant-timeline
+  .ant-timeline-item-head-blue {
+  color: #038175 !important;
+  border-color: #038175 !important;
+}
