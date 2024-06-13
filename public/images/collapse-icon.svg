@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(28 28) rotate(180)">
+    <g id="invisible_box" data-name="invisible box">
+      <rect id="Rectangle_2468" data-name="Rectangle 2468" width="28" height="28" fill="none"/>
+      <rect id="Rectangle_2469" data-name="Rectangle 2469" width="28" height="28" fill="none"/>
+      <rect id="Rectangle_2470" data-name="Rectangle 2470" width="28" height="28" fill="none"/>
+    </g>
+    <g id="Q3_icons" data-name="Q3 icons" transform="translate(5.945 5.35)">
+      <path id="Path_48656" data-name="Path 48656" d="M10.357,19.4l7.133,7.073a1.129,1.129,0,0,0,1.664,0L26.287,19.4a1.248,1.248,0,0,0,.119-1.6,1.129,1.129,0,0,0-1.783-.119L19.511,22.79v-12.6a1.189,1.189,0,1,0-2.378,0v12.6l-5.112-5.112a1.129,1.129,0,0,0-1.783.119A1.248,1.248,0,0,0,10.357,19.4Z" transform="translate(-10.001 -9)" fill="#038175"/>
+    </g>
+  </g>
+</svg>

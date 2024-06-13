@@ -19,13 +19,15 @@ const Careers = () => {
     cover: "",
     coverName: "",
   });
-  console.log(state);
+
   return (
     <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
       <div className="h-full px-[30px] lg:px-[120px] py-[120px]">
         <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
           <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
-            <div className="section-header">Apply Now</div>
+            <div className="section-header" style={{ textAlign: "left" }}>
+              Apply Now
+            </div>
             <Spacer height="35px" />
             <InputGroupText
               text="Name"

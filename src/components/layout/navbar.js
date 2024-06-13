@@ -116,7 +116,9 @@ const Navbar = () => {
               href={item.key}
               className={`text-[18px] hover:text-primary transition-all ${
                 item?.key === "/explore"
-                  ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg"
+                  ? pathname === "/" || pathname === "/our-team"
+                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg"
+                    : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg"
                   : scroll
                   ? `${pathname === item?.key ? "text-primary" : "text-black"}`
                   : `${
