@@ -87,7 +87,7 @@ export default function Home() {
       </div>
       <Spacer height="20px" />
       <div className="bg-[url('/images/core-features-bg.svg')] w-full bg-no-repeat bg-cover">
-        <Spacer height="100px" />
+        <Spacer height="120px" />
         <div className="flex justify-center items-center flex-col">
           <div className="section-header px-[50px] md:px-[120px]">
             Core Features
@@ -96,9 +96,9 @@ export default function Home() {
           <div className="text-[32px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
             A centralized ecosystem for schools
           </div>
-          <Spacer height="50px" />
+          <Spacer height="60px" />
           <CoreFeatures />
-          <Spacer height="50px" />
+          <Spacer height="60px" />
         </div>
       </div>
     </div>

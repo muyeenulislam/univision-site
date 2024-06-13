@@ -26,3 +26,14 @@ body {
   > .ant-tabs-nav::before {
   border: none !important;
 }
+
+.react-tel-input .form-control {
+  font-size: 14px !important;
+  background: #ffffff !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+  outline: none !important;
+  padding: 0px 0px 0px 60px !important;
+  border: none !important;
+  box-shadow: none !important;
+}

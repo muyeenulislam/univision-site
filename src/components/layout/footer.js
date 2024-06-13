@@ -27,16 +27,10 @@ const Footer = () => {
     <div className="w-full flex flex-col bg-gradient-to-r from-[#03544C] to-[#02312C] text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5">
         <div className="flex flex-col items-center p-5">
-          <div className="relative w-full h-[66px]">
-            <Image
-              src="/images/logo.png"
-              alt="Logo"
-              layout="fill"
-              objectFit="contain"
-            />
-          </div>
+          <Image src="/images/logo.png" alt="Logo" height={66} width={340} />
+
           <Spacer height="8px" />
-          <div className="text-white text-[20px] sm:text-[22px]">
+          <div className="text-white text-[18px] sm:text-[22px]">
             Your Dream, Our Responsibility
           </div>
           <Spacer height="20px" />

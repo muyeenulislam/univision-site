@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { Dropdown } from "antd";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -10,7 +10,8 @@ import useScreenSize from "@/utils/usescreensize";
 
 const Navbar = () => {
   const screenSize = useScreenSize();
-  const router = useRouter();
+
+  const pathname = usePathname();
 
   const [scroll, setScroll] = useState(false);
 
@@ -26,7 +27,7 @@ const Navbar = () => {
   }, []);
 
   const navbarItem = [
-    { label: "Home", key: "/home" },
+    { label: "Home", key: "/" },
     { label: "Careers", key: "/careers" },
     { label: "Our Team", key: "/our-team" },
     { label: "Contact Us", key: "/contact-us" },
@@ -57,7 +58,7 @@ const Navbar = () => {
           Our Team
         </a>
       ),
-      key: "1",
+      key: "2",
     },
     {
       label: (
@@ -65,7 +66,7 @@ const Navbar = () => {
           Contact us
         </a>
       ),
-      key: "1",
+      key: "3",
     },
     {
       label: (
@@ -73,7 +74,7 @@ const Navbar = () => {
           Sign Up Guide
         </a>
       ),
-      key: "1",
+      key: "4",
     },
     {
       label: (
@@ -81,7 +82,7 @@ const Navbar = () => {
           Explore Now
         </a>
       ),
-      key: "1",
+      key: "5",
     },
   ];
 
@@ -89,13 +90,19 @@ const Navbar = () => {
     <navbar
       className={`flex justify-between items-center fixed w-full px-[50px] md:px-[120px] py-5 transition-all duration-300 z-[1000] ${
         scroll
-          ? "bg-white bg-opacity-80 text-black backdrop-blur-md shadow-md"
-          : "bg-transparent text-white"
+          ? `bg-white bg-opacity-80 text-black backdrop-blur-md shadow-md`
+          : `bg-transparent  text-white`
       }`}
     >
       <a href="/">
         <Image
-          src={scroll ? "/images/logo-green.png" : "/images/logo.png"}
+          src={
+            pathname === "/" || pathname === "/our-team"
+              ? scroll
+                ? "/images/logo-green.png"
+                : "/images/logo.png"
+              : "/images/logo-mixed.png"
+          }
           alt=""
           height={35}
           width={196}
@@ -111,8 +118,16 @@ const Navbar = () => {
                 item?.key === "/explore"
                   ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg"
                   : scroll
-                  ? "text-black"
-                  : "text-white"
+                  ? `${pathname === item?.key ? "text-primary" : "text-black"}`
+                  : `${
+                      pathname === item?.key
+                        ? "text-primary"
+                        : `${
+                            pathname === "/" || pathname === "/our-team"
+                              ? "text-white"
+                              : "text-black"
+                          }`
+                    }`
               }`}
             >
               {item?.label}
@@ -129,7 +144,13 @@ const Navbar = () => {
             placement="bottomRight"
           >
             <RxHamburgerMenu
-              color={scroll ? "#038175" : "white"}
+              color={
+                pathname === "/" || pathname === "/our-team"
+                  ? scroll
+                    ? "#038175"
+                    : "white"
+                  : "#038175"
+              }
               fontSize={28}
             />
           </Dropdown>
