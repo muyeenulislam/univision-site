@@ -22,8 +22,8 @@ const Careers = () => {
 
   return (
     <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-      <div className="h-full px-[30px] lg:px-[120px] py-[120px]">
-        <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
+      <div className="h-full px-[30px] lg:px-[120px] py-[120px] ">
+        <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row fade-in-right">
           <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
             <div className="section-header" style={{ textAlign: "left" }}>
               Apply Now
@@ -68,17 +68,17 @@ const Careers = () => {
               value={state?.coverName}
             />
             <Spacer height="35px" />
-            <div>
+            <a href="https://admin.univision.hk/home" target="_blank">
               <PrimaryButton text="Submit" width="100%" />
-            </div>
+            </a>
           </div>
           <div className="bg-[url('/images/career-banner.png')] w-full bg-no-repeat bg-cover rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px]">
             <div className="flex flex-col text-white px-[58px] py-[87px]">
-              <div className="text-[42px] xl:text-[68px] font-bold">
+              <div className="text-[28px] xl:text-[42px] font-bold">
                 Join Our Team
               </div>
               <Spacer height="35px" />
-              <div className="text-[16px] xl:text-[22px] font-light">
+              <div className="text-[16px] xl:text-[18px] font-light">
                 As a dynamic, fast-growing start-up in the edtech space,
                 UniVision is committed to hiring widely across demographics and
                 disciplines in order to ensure that we have a representative
@@ -88,21 +88,21 @@ const Careers = () => {
                 favor of more traditional metrics.
               </div>
               <Spacer height="35px" />
-              <div className="text-[16px] xl:text-[22px] font-light">
+              <div className="text-[16px] xl:text-[18px] font-light">
                 If you are interested in working with us to support students in
                 their aspirations towards higher education, head on over to the
                 Careers page or reach out to us for information on a wide
                 variety of remote internships and full-time roles.
               </div>
               <Spacer height="35px" />
-              <div className="text-[16px] xl:text-[22px] font-light">
+              <div className="text-[16px] xl:text-[18px] font-light">
                 We are a young, dynamic and fast-paced fully-remote company with
                 employees located all over the world and we’re actively looking
                 to recruit brilliant and motivated individuals from a wide
                 variety of backgrounds and majors.
               </div>
               <Spacer height="35px" />
-              <div className="text-[16px] xl:text-[22px] font-light">
+              <div className="text-[16px] xl:text-[18px] font-light">
                 If you are interested in working for UniVision, we have a range
                 of roles that are open for application below. If you feel that
                 UniVision is a good fit for you but none of the roles below

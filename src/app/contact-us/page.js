@@ -65,15 +65,15 @@ const ContactUs = () => {
   return (
     <div>
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-        <div className="h-full px-[30px] lg:px-[120px] pt-[120px]">
+        <div className="h-full px-[30px] lg:px-[120px] pt-[120px] fade-in-right">
           <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
             <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
-              <div className="text-primary text-[27px]">Contact Us</div>
-              <Spacer height="35px" />
+              <div className="text-primary text-[24px]">Contact Us</div>
+              <Spacer height="10px" />
               <div className="section-header" style={{ textAlign: "left" }}>
                 Get in touch
               </div>
-              <Spacer height="35px" />
+              <Spacer height="20px" />
               <InputGroupText
                 text="Name"
                 placeholder="Enter your name"
@@ -102,9 +102,9 @@ const ContactUs = () => {
                 value={state?.message}
               />
               <Spacer height="35px" />
-              <div>
+              <a href="https://admin.univision.hk/home" target="_blank">
                 <PrimaryButton text="Submit" width="100%" />
-              </div>
+              </a>
             </div>
             <div
               className={`bg-[url('/images/contact-us-banner.jpg')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px] ${
@@ -116,9 +116,9 @@ const ContactUs = () => {
           <Spacer height="100px" />
         </div>
       </div>
-      <div className="px-[30px] lg:px-[120px] ">
+      <div className="px-[30px] lg:px-[120px] fade-in-right">
         <div className="section-header">You Ask. We Answer.</div>
-        <Spacer height="80px" />
+        <Spacer height="50px" />
         <div className="text-[22px] text-[#707070]">
           Others frequently ask.....
         </div>
@@ -180,6 +180,7 @@ const ContactUs = () => {
                             ? "rotate(180deg)"
                             : "rotate(0deg)",
                         transition: "transform 0.3s ease",
+                        maxWidth: "24px",
                       }}
                     />
                   )}

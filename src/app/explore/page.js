@@ -9,9 +9,9 @@ const ExploreNow = () => {
   return (
     <div>
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-        <div className="flex flex-col-reverse lg:flex-row gap-5 px-[30px] lg:px-[120px] pt-[120px] pb-[20px] lg:pb-[120px]">
+        <div className="flex flex-col-reverse lg:flex-row gap-5 px-[30px] lg:px-[120px] pt-[120px] pb-[20px] lg:pb-[120px] fade-in-right">
           <div className="flex items-center justify-center flex-col w-full">
-            <div className="text-primary text-[32px] md:text-[61px] text-center font-bold">
+            <div className="text-primary text-[28px] md:text-[46px] text-center font-bold">
               Your UniVision experience awaits!
             </div>
             <Spacer height="42px" />
@@ -45,7 +45,7 @@ const ExploreNow = () => {
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex flex-col lg:flex-row gap-5 px-[30px] lg:px-[120px] ">
+      <div className="flex flex-col lg:flex-row gap-5 px-[30px] lg:px-[120px]  fade-in-right">
         <div className="w-full flex justify-center items-center">
           <Image
             src={"/images/school-web-app-flipped.png"}
@@ -55,7 +55,7 @@ const ExploreNow = () => {
           />
         </div>
         <div className="w-full flex justify-center items-center flex-col">
-          <div className="text-primary text-[32px] md:text-[61px] text-center font-bold">
+          <div className="text-primary text-[28px] md:text-[46px] text-center font-bold">
             Your UniVision experience awaits!
           </div>
           <Spacer height="40px" />

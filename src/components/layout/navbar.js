@@ -76,14 +76,6 @@ const Navbar = () => {
       ),
       key: "4",
     },
-    {
-      label: (
-        <a href="/explore" className="text-[18px] font-semibold p-2">
-          Explore Now
-        </a>
-      ),
-      key: "5",
-    },
   ];
 
   return (
@@ -114,16 +106,28 @@ const Navbar = () => {
             <a
               key={index}
               href={item.key}
-              className={`text-[18px] hover:text-primary transition-all ${
+              className={`text-[16px] ${
+                pathname === "/" || pathname === "/our-team"
+                  ? scroll
+                    ? "hover:text-primary hover:font-semibold"
+                    : "hover:text-white hover:font-semibold"
+                  : "hover:text-primary hover:font-semibold"
+              }  transition-all ${
                 item?.key === "/explore"
                   ? pathname === "/" || pathname === "/our-team"
-                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg"
+                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary"
                     : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg"
                   : scroll
-                  ? `${pathname === item?.key ? "text-primary" : "text-black"}`
+                  ? `${
+                      pathname === item?.key
+                        ? "text-primary font-semibold"
+                        : "text-black"
+                    }`
                   : `${
                       pathname === item?.key
-                        ? "text-primary"
+                        ? pathname === "/" || pathname === "/our-team"
+                          ? "text-white font-semibold"
+                          : "text-primary font-semibold"
                         : `${
                             pathname === "/" || pathname === "/our-team"
                               ? "text-white"

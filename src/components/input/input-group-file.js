@@ -18,8 +18,8 @@ const InputGroupFile = (props) => {
   };
 
   return (
-    <div className="flex flex-col gap-[23px]">
-      <div className="text-[24px] font-normal">{props?.text}</div>
+    <div className="flex flex-col gap-[16px]">
+      <div className="text-[20px] font-normal">{props?.text}</div>
       <div
         className="rounded-xl border border-primary px-3 py-4 flex items-center cursor-pointer"
         onClick={handleClick}

@@ -11,7 +11,6 @@ const Footer = () => {
       link: "https://www.facebook.com/profile.php?id=61558909776746",
       icon: "/images/facebook.svg",
     },
-    { title: "Instagram", link: "#", icon: "/images/instagram.svg" },
     {
       title: "LinkedIn",
       link: "https://www.linkedin.com/company/visionedtechsolutions/",
@@ -30,7 +29,7 @@ const Footer = () => {
           <Image src="/images/logo.png" alt="Logo" height={66} width={340} />
 
           <Spacer height="8px" />
-          <div className="text-white text-[18px] sm:text-[22px]">
+          <div className="text-white text-[18px] md:text-[21px]">
             Your Dream, Our Responsibility
           </div>
           <Spacer height="20px" />
@@ -52,13 +51,13 @@ const Footer = () => {
         <div className="flex flex-col p-5">
           <div className=" text-[28px] font-semibold">Our Offices</div>
           <Spacer height="20px" />
-          <div className="text-[22px] font-light">
+          <div className="text-[20px] font-light">
             <span className="font-thin">36-21, Central Park Towers - DIFC</span>
             <br></br>
             <b>Dubai, UAE</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[22px] font-light">
+          <div className="text-[20px] font-light">
             <span className="font-thin">
               CraftLab Asia, Plaza Hamodal, Ground Floor, Petaling Jaya,
             </span>
@@ -66,7 +65,7 @@ const Footer = () => {
             <b>Selangor, Malaysia</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[22px] font-light">
+          <div className="text-[20px] font-light">
             <span className="font-thin"> 199 E, Block 2 P.E.C.H.S.,</span>
             <br></br>
             <b>Karachi, Pakistan</b>
@@ -75,41 +74,37 @@ const Footer = () => {
         <div className="w-max lg:mx-auto p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Legal</div>
           <Spacer height="20px" />
-          <a href="/privacy-policy" className="underline">
-            Privacy Policy
-          </a>
+          <a href="/privacy-policy">Privacy Policy</a>
           <Spacer height="15px" />
-          <a href="/terms-and-conditions" className="underline">
-            Terms and Conditions
-          </a>
+          <a href="/terms-and-conditions">Terms and Conditions</a>
         </div>
         <div className="w-max lg:mx-auto p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Follow Us</div>
           <Spacer height="20px" />
           <div className="flex gap-1">
             {socialItems?.map((item, index) => (
-              <Popover content={<>UniVision</>} key={index} trigger="hover">
-                <a href={item?.link} target="_blank">
-                  <Image src={item?.icon} height={34} width={34} alt="fb" />
-                </a>
-              </Popover>
+              <a href={item?.link} target="_blank" key={index}>
+                <Image src={item?.icon} height={34} width={34} alt="fb" />
+              </a>
             ))}
           </div>
           <Spacer height="60px" />
           <div className=" text-[28px] font-semibold">Contact Us</div>
           <Spacer height="20px" />
-          <div className="flex gap-1">
+          <div className="flex gap-3">
             <Image src={"/images/phone.svg"} height={18} width={18} alt="fb" />
-            <div>+971 58 539 9043</div>
+            <a target="_blank" href="https://wa.me/+971585399043">
+              +971 58 539 9043
+            </a>
           </div>
           <Spacer height="10px" />
-          <div className="flex gap-1">
+          <div className="flex gap-3">
             <Image src={"/images/email.svg"} height={18} width={18} alt="fb" />
             <a href="mailto:admin@univision.hk">admin@univision.hk</a>
           </div>
         </div>
       </div>
-      <div className=" text-[20px] text-center p-5 border-t border-white">
+      <div className=" text-[16px] text-center p-5 border-t border-white">
         Copyright ©️ UniVision {new Date().getFullYear()}. All rights reserved.
       </div>
     </div>

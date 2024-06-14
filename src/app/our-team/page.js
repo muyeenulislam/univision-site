@@ -29,27 +29,29 @@ const OurTeam = () => {
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] w-full bg-no-repeat bg-cover h-max lg:h-[1080px] flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
-        <div className="text-[36px] md:text-[47px] lg:text-[68px] text-center font-bold">
-          Our Leadership Team
-        </div>
-        <Spacer height="35px" />
-        <div className="text-[18px] md:text-[24px] lg:text-[30px] text-center font-light">
-          Young and dynamic, UniVision’s core founders team consists of
-          individuals from a wide variety of backgrounds, nationalities and
-          majors who all had one thing in common: they muddled their way through
-          the college selection process and wanted to make sure that no one else
-          had to experience the stress and irritation they went through. Our
-          goal is to make the search and selection process more intuitive and
-          accessible for students regardless of whether they have access to
-          guidance counselors or not, so that students are able to realize their
-          dreams of pursuing higher education in places that support their
-          growth and provide them with opportunities that are best suited for
-          their goals.
+      <div className="bg-[url('/images/our-team-bg.png')] w-full bg-no-repeat bg-cover h-max  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
+        <div className="fade-in-right">
+          <div className="text-[30px] md:text-[36px] lg:text-[48px] text-center font-bold">
+            Our Leadership Team
+          </div>
+          <Spacer height="20px" />
+          <div className="text-[16px] md:text-[20px] lg:text-[24px] text-center font-light">
+            Young and dynamic, UniVision’s core founders team consists of
+            individuals from a wide variety of backgrounds, nationalities and
+            majors who all had one thing in common: they muddled their way
+            through the college selection process and wanted to make sure that
+            no one else had to experience the stress and irritation they went
+            through. Our goal is to make the search and selection process more
+            intuitive and accessible for students regardless of whether they
+            have access to guidance counselors or not, so that students are able
+            to realize their dreams of pursuing higher education in places that
+            support their growth and provide them with opportunities that are
+            best suited for their goals.
+          </div>
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex justify-center items-center gap-4 p-2 flex-wrap">
+      <div className="flex justify-center items-center gap-4 p-2 flex-wrap fade-in-right">
         {teamInfo?.map((item, index) => (
           <div
             key={index}
@@ -70,14 +72,14 @@ const OurTeam = () => {
         ))}
       </div>
       <Spacer height="40px" />
-      <div className="flex items-center justify-center px-2">
+      <div className="flex items-center justify-center px-2 fade-in-right">
         <a
           href="https://www.linkedin.com/company/visionedtechsolutions/"
           target="_blank"
         >
           <PrimaryButton
             text="Meet the rest of our team on LinkedIn"
-            width="450px"
+            maxWidth="400px"
           />
         </a>
       </div>

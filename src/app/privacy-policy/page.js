@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
   return (
     <div>
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-        <div className="h-full px-[30px] lg:px-[120px] pt-[120px]">
+        <div className="h-full px-[30px] lg:px-[120px] pt-[120px] fade-in-right">
           <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md ">
             <div className="flex flex-col w-full p-[50px] justify-center bg-white rounded-[36px]">
               <div className="text[32px] font-bold">Privacy Policy</div>

@@ -8,7 +8,7 @@ body {
 }
 
 .section-header {
-  font-size: 47px;
+  font-size: 36px;
   color: black;
   font-weight: 800;
   text-align: center;
@@ -120,4 +120,10 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs
+  .ant-tabs-tab
+  + .ant-tabs-tab {
+  margin: 0 0 0 10px !important;
 }

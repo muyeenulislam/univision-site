@@ -67,8 +67,8 @@ const WebAppSignup = () => {
   const stepsIndividualStudent = [
     {
       step: (
-        <div className="flex flex-col gap-11">
-          <div className="text-primary font-bold text-[32px] md:text-[38px] lg:text-[76px]">
+        <div className="flex flex-col gap-8">
+          <div className="text-primary font-bold text-[26px] md:text-[32px] lg:text-[56px]">
             Register As Individual Student
           </div>
           <div>Step 1:</div>
@@ -188,11 +188,11 @@ const WebAppSignup = () => {
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               } justify-between `}
             >
-              <div className="flex flex-col justify-center gap-6 w-full z-[10]">
-                <div className="text-primary text-[26px] md:text-[47px] font-semibold">
+              <div className="flex flex-col justify-center gap-3 w-full z-[10]">
+                <div className="text-primary text-[20px] md:text-[36px] font-semibold">
                   {item?.step}
                 </div>
-                <div className="text-black text-[26px] lg:text-[47px] md:text-[36px] font-semibold">
+                <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
                   {item?.title}
                 </div>
                 <Timeline items={item?.timeline} />
@@ -211,11 +211,11 @@ const WebAppSignup = () => {
                 index % 2 !== 0 ? "md:flex-row-reverse" : ""
               } justify-between`}
             >
-              <div className="flex flex-col justify-center gap-6 w-full z-[10]">
-                <div className="text-primary text-[26px] md:text-[47px] font-semibold">
+              <div className="flex flex-col justify-center gap-3 w-full z-[10]">
+                <div className="text-primary text-[20px] md:text-[36px] font-semibold">
                   {item?.step}
                 </div>
-                <div className="text-black text-[26px] lg:text-[47px] md:text-[36px] font-semibold">
+                <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
                   {item?.title}
                 </div>
                 <Timeline items={item?.timeline} />

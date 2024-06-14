@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const CoreFeatures = () => {
+const CoreFeaturesSchool = () => {
   const coreFeaturesList = [
     {
       title: "Data Insights",
@@ -33,16 +33,16 @@ const CoreFeatures = () => {
     <div className="flex justify-center gap-5 flex-wrap px-[50px] md:px-[120px] ">
       {coreFeaturesList?.map((item, index) => (
         <div
-          className={`p-[30px] max-w-[280px] ${
+          className={`p-[20px] max-w-[240px] ${
             index % 2 === 0 ? "border-primary" : "border-[#C0D06B]"
           } border-2 flex flex-col gap-6 items-center rounded-[60px]`}
           key={index}
         >
-          <Image src={item?.icon} height={80} width={80} alt="" />
+          <Image src={item?.icon} height={60} width={60} alt="" />
           <div className="text-center text-[22px] font-semibold">
             {item?.title}
           </div>
-          <div className="text-center text-[16px] font-semibold">
+          <div className="text-center text-[12px] md:text-[14px] font-semibold">
             {item?.desc}
           </div>
         </div>
@@ -51,4 +51,4 @@ const CoreFeatures = () => {
   );
 };
 
-export default CoreFeatures;
+export default CoreFeaturesSchool;

@@ -236,10 +236,10 @@ const MobileAppSignup = () => {
         }}
       >
         <div className="relative z-[100]">
-          <div className="text-primary text-[42px] lg:text-[56px] xl:text-[71px] font-bold max-w-[550px] text-center md:text-left">
+          <div className="text-primary text-[36px] lg:text-[42px] xl:text-[50px] font-bold max-w-[550px] text-center md:text-left">
             Register as School Student
           </div>
-          <Spacer height="50px" />
+          <Spacer height="20px" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {stepsSchoolStudent?.map((item, index) => (
               <div
@@ -254,11 +254,11 @@ const MobileAppSignup = () => {
                     : "md:flex-row"
                 } justify-between `}
               >
-                <div className="flex flex-col justify-center gap-6 w-full z-[10]">
-                  <div className="text-primary text-[26px] md:text-[47px] font-semibold">
+                <div className="flex flex-col justify-center gap-3 w-full z-[10]">
+                  <div className="text-primary text-[20px] md:text-[36px] font-semibold">
                     {item?.step}
                   </div>
-                  <div className="text-black text-[26px] xl:text-[47px] lg:text-[36px] font-semibold">
+                  <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
                     {item?.title}
                   </div>
                   <Timeline items={item?.timeline} />
@@ -272,10 +272,10 @@ const MobileAppSignup = () => {
         </div>
         <Spacer height="60px" />
         <div className="relative z-[100]">
-          <div className="text-primary text-[42px] lg:text-[56px] xl:text-[71px] font-bold max-w-[550px] text-center md:text-left">
+          <div className="text-primary text-[36px] lg:text-[42px] xl:text-[50px] font-bold max-w-[550px] text-center md:text-left">
             Register as Individual Student
           </div>
-          <Spacer height="50px" />
+          <Spacer height="20px" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {stepsIndividualStudent?.map((item, index) => (
               <div
@@ -290,11 +290,11 @@ const MobileAppSignup = () => {
                     : "md:flex-row-reverse"
                 } justify-between `}
               >
-                <div className="flex flex-col justify-center gap-6 w-full z-[10]">
-                  <div className="text-primary text-[26px] md:text-[47px] font-semibold">
+                <div className="flex flex-col justify-center gap-3 w-full z-[10]">
+                  <div className="text-primary text-[20px] md:text-[36px] font-semibold">
                     {item?.step}
                   </div>
-                  <div className="text-black text-[26px] lg:text-[47px] md:text-[36px] font-semibold">
+                  <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
                     {item?.title}
                   </div>
                   <Timeline items={item?.timeline} />
