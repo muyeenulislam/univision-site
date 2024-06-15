@@ -12,9 +12,11 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step1.png",
       timeline: [
         {
+          color: "#038175",
           children: "If You Are Not Registered Before",
         },
         {
+          color: "#038175",
           children: "Click Sign Up",
         },
       ],
@@ -25,12 +27,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step2.png",
       timeline: [
         {
+          color: "#038175",
           children: "Register As Partner School Student",
         },
         {
+          color: "#038175",
           children: "If Your School Is Available In The List",
         },
         {
+          color: "#038175",
           children: "Click Continue",
         },
       ],
@@ -41,6 +46,7 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step3.png",
       timeline: [
         {
+          color: "#038175",
           children: "Proceed To An Individual Student",
         },
       ],
@@ -51,12 +57,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step4.png",
       timeline: [
         {
+          color: "#038175",
           children: "Enter New Password",
         },
         {
+          color: "#038175",
           children: "Confirm New Password",
         },
         {
+          color: "#038175",
           children: "Click Next",
         },
       ],
@@ -67,12 +76,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step5.png",
       timeline: [
         {
+          color: "#038175",
           children: "Enter Email",
         },
         {
+          color: "#038175",
           children: "Enter Password",
         },
         {
+          color: "#038175",
           children: "Click Sign In",
         },
       ],
@@ -83,12 +95,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-school-step6.png",
       timeline: [
         {
+          color: "#038175",
           children: "Explore The App",
         },
         {
+          color: "#038175",
           children: "Try AI Recommender",
         },
         {
+          color: "#038175",
           children: "Multiple Other Features",
         },
       ],
@@ -101,9 +116,11 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step2.png",
       timeline: [
         {
+          color: "#038175",
           children: "Enter Required Details",
         },
         {
+          color: "#038175",
           children: "Click Continue",
         },
       ],
@@ -114,12 +131,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step2.png",
       timeline: [
         {
+          color: "#038175",
           children: "Enter New Password",
         },
         {
+          color: "#038175",
           children: "Confirm New Password",
         },
         {
+          color: "#038175",
           children: "Click Next",
         },
       ],
@@ -130,12 +150,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step3.png",
       timeline: [
         {
+          color: "#038175",
           children: "Select Your Subscription Plan or",
         },
         {
+          color: "#038175",
           children: "Select Monthly Payment or",
         },
         {
+          color: "#038175",
           children: "Select One Time Payment",
         },
       ],
@@ -146,9 +169,11 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step4.png",
       timeline: [
         {
+          color: "#038175",
           children: "Credit/Debit Card or",
         },
         {
+          color: "#038175",
           children: "Cash Collection On Delivery",
         },
       ],
@@ -159,12 +184,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step5.png",
       timeline: [
         {
+          color: "#038175",
           children: "Enter Email",
         },
         {
+          color: "#038175",
           children: "Enter Password",
         },
         {
+          color: "#038175",
           children: "Click Sign In",
         },
       ],
@@ -175,12 +203,15 @@ const MobileAppSignup = () => {
       image: "/images/mobile-individual-step4.png",
       timeline: [
         {
+          color: "#038175",
           children: "Explore The App",
         },
         {
+          color: "#038175",
           children: "Try AI Recommender",
         },
         {
+          color: "#038175",
           children: "Multiple Other Features",
         },
       ],

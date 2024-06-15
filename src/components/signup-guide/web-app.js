@@ -10,15 +10,12 @@ const WebAppSignup = () => {
       title: "Register As Partner School Student",
       image: "/images/webapp-step1.png",
       timeline: [
+        { color: "#038175", children: "Enter Required Details" },
         {
-          children: "Enter Required Details",
-        },
-        {
+          color: "#038175",
           children: "If Your School Is Available In The List",
         },
-        {
-          children: "Click Continue",
-        },
+        { color: "#038175", children: "Click Continue" },
       ],
     },
     {
@@ -26,9 +23,7 @@ const WebAppSignup = () => {
       title: "If School Is Not Available",
       image: "/images/webapp-step2.png",
       timeline: [
-        {
-          children: "Proceed To An Individual Student",
-        },
+        { color: "#038175", children: "Proceed To An Individual Student" },
       ],
     },
     {
@@ -36,15 +31,9 @@ const WebAppSignup = () => {
       title: "Change Password",
       image: "/images/webapp-step3.png",
       timeline: [
-        {
-          children: "Enter New Password",
-        },
-        {
-          children: "Confirm New Password",
-        },
-        {
-          children: "Click Next",
-        },
+        { color: "#038175", children: "Enter New Password" },
+        { color: "#038175", children: "Confirm New Password" },
+        { color: "#038175", children: "Click Next" },
       ],
     },
     {
@@ -52,15 +41,9 @@ const WebAppSignup = () => {
       title: "Login To Continue",
       image: "/images/webapp-step4.png",
       timeline: [
-        {
-          children: "Enter Email",
-        },
-        {
-          children: "Enter Password",
-        },
-        {
-          children: "Click Sign In",
-        },
+        { color: "#038175", children: "Enter Email" },
+        { color: "#038175", children: "Enter Password" },
+        { color: "#038175", children: "Click Sign In" },
       ],
     },
   ];
@@ -77,12 +60,8 @@ const WebAppSignup = () => {
       title: "Register As Individual Student",
       image: "/images/web-individual-step1.png",
       timeline: [
-        {
-          children: "Enter Required Details",
-        },
-        {
-          children: "Click Continue",
-        },
+        { color: "#038175", children: "Enter Required Details" },
+        { color: "#038175", children: "Click Continue" },
       ],
     },
     {
@@ -90,15 +69,9 @@ const WebAppSignup = () => {
       title: "Change Password",
       image: "/images/web-individual-step2.png",
       timeline: [
-        {
-          children: "Enter New Password",
-        },
-        {
-          children: "Confirm New Password",
-        },
-        {
-          children: "Click Next",
-        },
+        { color: "#038175", children: "Enter New Password" },
+        { color: "#038175", children: "Confirm New Password" },
+        { color: "#038175", children: "Click Next" },
       ],
     },
     {
@@ -106,15 +79,9 @@ const WebAppSignup = () => {
       title: "Select Your Subscription Plan",
       image: "/images/web-individual-step3.png",
       timeline: [
-        {
-          children: "Select Your Subscription Plan or",
-        },
-        {
-          children: "Select Monthly Payment or",
-        },
-        {
-          children: "Select One Time Payment",
-        },
+        { color: "#038175", children: "Select Your Subscription Plan or" },
+        { color: "#038175", children: "Select Monthly Payment or" },
+        { color: "#038175", children: "Select One Time Payment" },
       ],
     },
     {
@@ -122,12 +89,8 @@ const WebAppSignup = () => {
       title: "Select Payment Method",
       image: "/images/web-individual-step4.png",
       timeline: [
-        {
-          children: "Credit/Debit Card",
-        },
-        {
-          children: "Cash Collection On Delivery",
-        },
+        { color: "#038175", children: "Credit/Debit Card" },
+        { color: "#038175", children: "Cash Collection On Delivery" },
       ],
     },
   ];
