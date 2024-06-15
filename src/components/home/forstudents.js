@@ -92,6 +92,7 @@ const ForStudents = () => {
         <div className="w-full flex justify-center items-center z-10 perspective p-5">
           <Image
             src={"/images/student-video.gif"}
+            unoptimized
             alt=""
             height={823}
             width={300}

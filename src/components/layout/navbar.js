@@ -148,7 +148,7 @@ const Navbar = () => {
             }}
             trigger={["click"]}
             placement="bottomRight"
-            overlayStyle={{ marginLeft: "50px" }}
+            overlayStyle={{ marginRight: "-50px" }}
           >
             <RxHamburgerMenu
               color={

@@ -63,9 +63,9 @@ body {
 }
 
 /* hamburger dropdown */
-:where(.css-dev-only-do-not-override-pt9lnq).ant-dropdown .ant-dropdown-menu,
-:where(.css-dev-only-do-not-override-pt9lnq).ant-dropdown-menu-submenu
-  .ant-dropdown-menu {
+
+.ant-dropdown .ant-dropdown-menu,
+.ant-dropdown-menu-submenu .ant-dropdown-menu {
   margin-right: -20px !important;
 }
 

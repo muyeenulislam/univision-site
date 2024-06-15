@@ -24,12 +24,12 @@ const OurTeam = () => {
     {
       name: "Sameer Asad",
       role: "Chief Information Officer (CIO)",
-      image: "/images/muyeen.jpg",
+      image: "/images/sameer.jpg",
     },
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] w-full bg-no-repeat bg-cover lg:h-[110vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
+      <div className="bg-[url('/images/our-team-bg.png')] h-[110vh] w-full bg-no-repeat bg-cover lg:h-[110vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
         <div className="fade-in-right">
           <div className="text-[30px] md:text-[36px] lg:text-[48px] text-center font-bold">
             Our Leadership Team
