@@ -89,12 +89,13 @@ const ForStudents = () => {
             />
           </div>
         )}
-        <div className="w-full flex justify-center items-center z-10">
+        <div className="w-full flex justify-center items-center z-10 perspective p-5">
           <Image
             src={"/images/student-video.gif"}
             alt=""
-            height={833}
-            width={385}
+            height={823}
+            width={300}
+            className=" object-cover rotate-y-15"
           />
         </div>
 

@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="bg-[url('/images/home-cover.png')] w-full bg-no-repeat bg-cover">
+      <div className="bg-[url('/images/home-cover.png')] h-[110vh] w-full bg-no-repeat bg-cover">
         <div className="flex justify-between items-center px-[50px] md:px-[120px] py-[170px] fade-in-right">
           <div className="flex flex-col gap-5 w-full lg:w-[40%]">
             <div className="text-white text-[30px] md:text-[46px] font-extrabold ">

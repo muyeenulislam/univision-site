@@ -29,7 +29,7 @@ const OurTeam = () => {
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] w-full bg-no-repeat bg-cover h-max  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
+      <div className="bg-[url('/images/our-team-bg.png')] w-full bg-no-repeat bg-cover lg:h-[110vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
         <div className="fade-in-right">
           <div className="text-[30px] md:text-[36px] lg:text-[48px] text-center font-bold">
             Our Leadership Team
@@ -79,7 +79,7 @@ const OurTeam = () => {
         >
           <PrimaryButton
             text="Meet the rest of our team on LinkedIn"
-            maxWidth="400px"
+            maxwidth="400px"
           />
         </a>
       </div>

@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
 import Image from "next/image";
-import { Popover } from "antd";
 
 import Spacer from "../../utils/spacer";
 
@@ -78,13 +78,25 @@ const Footer = () => {
           <Spacer height="15px" />
           <a href="/terms-and-conditions">Terms and Conditions</a>
         </div>
-        <div className="w-max lg:mx-auto p-5 flex flex-col">
+        <div className="w-max  p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Follow Us</div>
           <Spacer height="20px" />
           <div className="flex gap-1">
             {socialItems?.map((item, index) => (
-              <a href={item?.link} target="_blank" key={index}>
-                <Image src={item?.icon} height={34} width={34} alt="fb" />
+              <a
+                href={item?.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                key={index}
+              >
+                <Image
+                  src={item?.icon}
+                  height={34}
+                  width={34}
+                  alt="social icon"
+                />
+                <span className="social-handle">UniVision</span>
               </a>
             ))}
           </div>

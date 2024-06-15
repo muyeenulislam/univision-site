@@ -68,6 +68,12 @@ body {
   border-color: #038175 !important;
 }
 
+:where(.css-dev-only-do-not-override-pt9lnq).ant-dropdown .ant-dropdown-menu,
+:where(.css-dev-only-do-not-override-pt9lnq).ant-dropdown-menu-submenu
+  .ant-dropdown-menu {
+  margin-right: -20px !important;
+}
+
 @keyframes fadeInFromLeft {
   from {
     opacity: 0;
@@ -126,4 +132,44 @@ body {
   .ant-tabs-tab
   + .ant-tabs-tab {
   margin: 0 0 0 10px !important;
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .rotate-y-15 {
+    transform: rotateY(15deg);
+    transform-origin: right;
+  }
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.social-handle {
+  margin-left: 0;
+  opacity: 0;
+  background-color: #018d7f;
+  color: #fff;
+  border-radius: 12px;
+
+  white-space: nowrap;
+  transition: margin-left 0.3s ease, opacity 0.3s ease;
+  max-width: 0;
+  overflow: hidden;
+}
+
+.social-link:hover .social-handle {
+  margin-left: 10px;
+  opacity: 1;
+  max-width: 150px;
+  padding: 2px 8px;
+  transition: margin-left 0.3s ease, opacity 0.3s ease;
 }

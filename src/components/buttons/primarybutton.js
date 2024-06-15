@@ -6,7 +6,7 @@ const PrimaryButton = (props) => {
       className={`rounded-2xl bg-primary text-white border hover:bg-white hover:text-primary transition-all w-full border-primary  py-3 px-6 font-bold text-ellipsis overflow-hidden whitespace-nowrap shadow-md`}
       style={{
         width: props?.width ?? "100%",
-        maxWidth: props?.maxWidth ?? "100%",
+        maxWidth: props?.maxwidth ?? "100%",
       }}
       {...props}
     >
