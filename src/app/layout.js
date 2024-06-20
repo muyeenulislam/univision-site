@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
-        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:image" content="/images/favicon.svg" />
         <meta property="og:url" content="https://univision.hk" />
         <meta property="og:type" content="website" />
         <link
