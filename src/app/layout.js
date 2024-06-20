@@ -35,6 +35,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta property="og:title" content={metadata.title} />
+        <meta property="og:description" content={metadata.description} />
+        <meta property="og:image" content="/images/og-image.png" />
+        <meta property="og:url" content="https://univision.hk" />
+        <meta property="og:type" content="website" />
+        <link
+          rel="icon"
+          href="/images/favicon.svg"
+          sizes="32x32"
+          type="image/svg+xml"
+        />
+        <link
+          rel="icon"
+          href="/images/favicon.svg"
+          sizes="16x16"
+          type="image/png"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/images/favicon.svg"
+          sizes="180x180"
+        />
+      </head>
       <ConfigProvider
         theme={{
           components: {

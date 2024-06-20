@@ -69,7 +69,7 @@ const ForInstitutions = () => {
       )}
       <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-[100%] right-[49.5%]">
+          <div className="absolute h-[100%] right-[49.5%] top-[0%]">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -131,7 +131,7 @@ const ForInstitutions = () => {
       <Spacer height="40px" />
       <div className="flex justify-center items-center flex-col lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-[100%] right-[49.5%]">
+          <div className="absolute h-max right-[49.5%] top-[0%]">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -191,7 +191,7 @@ const ForInstitutions = () => {
       <Spacer height="40px" />
       <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-[100%] right-[49.5%] top-[45px]">
+          <div className="absolute max right-[49.5%] top-[5%]">
             <Image
               src={"/images/green-dot.svg"}
               alt=""

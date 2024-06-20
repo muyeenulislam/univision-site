@@ -10,21 +10,25 @@ const OurTeam = () => {
       name: "Jahangir Ateeq",
       role: "Co-founder & CEO",
       image: "/images/jahangir.png",
+      linkedin: "https://www.linkedin.com/in/jahangirateeq/",
     },
     {
       name: "Murtaza Abedin",
       role: "Strategic Advisor",
       image: "/images/murtaza.png",
+      linkedin: "https://www.linkedin.com/in/murtaza-abedin-b40181152/",
     },
     {
       name: "Md. Muyeen - Ul - Islam",
       role: "Head of Technology",
       image: "/images/muyeen.jpg",
+      linkedin: "https://www.linkedin.com/in/md-muyeen-ul-islam/",
     },
     {
       name: "Sameer Asad",
       role: "Chief Information Officer (CIO)",
       image: "/images/sameer.jpg",
+      linkedin: "https://www.linkedin.com/in/sameer-asad-268694269",
     },
   ];
   return (
@@ -53,9 +57,11 @@ const OurTeam = () => {
       <Spacer height="40px" />
       <div className="flex justify-center items-center gap-4 p-2 flex-wrap fade-in-right">
         {teamInfo?.map((item, index) => (
-          <div
+          <a
             key={index}
             className="flex flex-col justify-center items-center gap-1"
+            href={item?.linkedin}
+            target="_blank"
           >
             <Image
               src={item?.image}
@@ -68,7 +74,7 @@ const OurTeam = () => {
               {item?.name}
             </div>
             <div className="text-primary text-[18px]">{item?.role}</div>
-          </div>
+          </a>
         ))}
       </div>
       <Spacer height="40px" />
@@ -77,10 +83,7 @@ const OurTeam = () => {
           href="https://www.linkedin.com/company/visionedtechsolutions/"
           target="_blank"
         >
-          <PrimaryButton
-            text="Meet the rest of our team on LinkedIn"
-            maxwidth="400px"
-          />
+          <PrimaryButton text="Learn more" maxwidth="400px" />
         </a>
       </div>
       <Spacer height="140px" />

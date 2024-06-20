@@ -30,10 +30,10 @@ const CoreFeaturesSchool = () => {
     },
   ];
   return (
-    <div className="flex justify-center gap-5 flex-wrap px-[50px] md:px-[120px] ">
+    <div className="flex justify-center gap-5 flex-wrap xl:flex-nowrap px-[50px] md:px-[100px] xl:px-[140px]">
       {coreFeaturesList?.map((item, index) => (
         <div
-          className={`p-[20px] max-w-[240px] ${
+          className={`p-[20px] w-[240px] ${
             index % 2 === 0 ? "border-primary" : "border-[#C0D06B]"
           } border-2 flex flex-col gap-6 items-center rounded-[60px]`}
           key={index}

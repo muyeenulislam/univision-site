@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="bg-[url('/images/home-cover.png')] h-[110vh] w-full bg-no-repeat bg-cover">
+      <div className="bg-[linear-gradient(to_right_bottom,rgba(3,129,117,0.75),rgba(2,55,50,0.75)),url('/images/hero-img.jpg')] h-[110vh] md:h-full w-full bg-no-repeat bg-cover bg-center ">
         <div className="flex justify-between items-center px-[50px] md:px-[120px] py-[170px] fade-in-right">
           <div className="flex flex-col gap-5 w-full lg:w-[40%]">
             <div className="text-white text-[30px] md:text-[46px] font-extrabold ">
@@ -58,7 +58,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="w-[50%] hidden lg:block">
+          <div className="w-[50%] hidden lg:block h-max">
             <Image
               src={"/images/banner-secondary.png"}
               height={890}
