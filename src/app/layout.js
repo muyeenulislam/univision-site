@@ -41,13 +41,13 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
         <meta property="og:url" content="https://www.univision.hk" />
-        <meta property="og:image" content="/images/favicon.svg" />
+        <meta property="og:image" content="/images/og-logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="twitter:domain" content="univision.hk" />
         <meta property="twitter:url" content="https://www.univision.hk" />
-        <meta name="twitter:title" content="UniVision" />
-        <meta name="twitter:description" content="UniVision Website" />
-        <meta name="twitter:image" content="/images/favicon.svg" />
+        <meta name="twitter:title" content={metadata.title} />
+        <meta name="twitter:description" content={metadata.description} />
+        <meta name="twitter:image" content="/images/og-logo.png" />
       </head>
       <ConfigProvider
         theme={{
