@@ -40,26 +40,14 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.title} />
         <meta property="og:description" content={metadata.description} />
+        <meta property="og:url" content="https://www.univision.hk" />
         <meta property="og:image" content="/images/favicon.svg" />
-        <meta property="og:url" content="https://univision.hk" />
-        <meta property="og:type" content="website" />
-        <link
-          rel="icon"
-          href="/images/favicon.svg"
-          sizes="32x32"
-          type="image/svg+xml"
-        />
-        <link
-          rel="icon"
-          href="/images/favicon.svg"
-          sizes="16x16"
-          type="image/png"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/images/favicon.svg"
-          sizes="180x180"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="univision.hk" />
+        <meta property="twitter:url" content="https://www.univision.hk" />
+        <meta name="twitter:title" content="UniVision" />
+        <meta name="twitter:description" content="UniVision Website" />
+        <meta name="twitter:image" content="/images/favicon.svg" />
       </head>
       <ConfigProvider
         theme={{
