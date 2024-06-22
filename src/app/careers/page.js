@@ -66,7 +66,7 @@ const Careers = () => {
         }
 
         const sendEmail = await axios.post(
-          "http://localhost:8080/website-email/send-email-career",
+          "https://api-prod-univision.azurewebsites.net/website-email/send-email-career",
           formData
         );
 

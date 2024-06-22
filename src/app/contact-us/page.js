@@ -64,7 +64,7 @@ const ContactUs = () => {
         };
 
         const sendEmail = await axios.post(
-          "http://localhost:8080/website-email/send-email-contact",
+          "https://api-prod-univision.azurewebsites.net/website-email/send-email-contact",
           body
         );
 
