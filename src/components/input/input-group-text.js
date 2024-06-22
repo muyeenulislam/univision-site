@@ -7,11 +7,11 @@ const InputGroupText = (props) => {
       <div className="text-[20px] font-normal">{props?.text}</div>
       <div className="rounded-xl border border-primary px-3 py-4">
         <input
-          type="text"
+          type={props?.type || "text"}
           placeholder={props?.placeholder || "Enter value"}
           onChange={(e) => props?.handleChange(e.target.value)}
           className="outline-none w-full"
-          value={props?.value || undefined}
+          value={props?.value || ""}
         />
       </div>
     </div>
