@@ -70,7 +70,7 @@ const ForStudents = () => {
 
       <div className="flex justify-center items-center flex-col lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-max right-[49.5%] top-[0%]">
+          <div className="absolute h-max right-[49%] lg:right-[48.9%] xl:right-[49.3%] 2xl:right-[49.35%] 3xl:right-[49.5%] top-[0%]">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -132,7 +132,7 @@ const ForStudents = () => {
       <Spacer height="20px" />
       <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-max right-[49.5%] top-[5%]">
+          <div className="absolute h-max right-[49%] lg:right-[48.9%] xl:right-[49.3%] 2xl:right-[49.35%] 3xl:right-[49.5%] top-[0%]">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
