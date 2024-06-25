@@ -1,7 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { Collapse, ConfigProvider } from "antd";
+import { Collapse, ConfigProvider, message } from "antd";
 import Image from "next/image";
+import axios from "axios";
+
+import isValidEmail from "@/utils/isvalidemail";
 import Spacer from "@/utils/spacer";
 import useScreenSize from "@/utils/usescreensize";
 
@@ -21,11 +24,61 @@ const ContactUs = () => {
     message: "",
   });
 
+  const defaultState = () => {
+    setState({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
+
   const handleActiveKey = (key) => {
     if (activeKey === key) {
       setActiveKey(null);
     } else {
       setActiveKey(key);
+    }
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      if (!state?.name) {
+        message.error("Name is required");
+      } else if (!state?.email) {
+        message.error("Email is required");
+      } else if (!isValidEmail(state.email)) {
+        message.error("Please enter a valid email address");
+      } else if (!state?.phone) {
+        message.error("Phone is required");
+      } else if (!state?.message) {
+        message.error("Message is required");
+      } else {
+        const body = {
+          name: state.name,
+          email: state.email,
+          phone: state.phone,
+          message: state.message,
+        };
+
+        const sendEmail = await axios.post(
+          "https://api-prod-univision.azurewebsites.net/website-email/send-email-contact",
+          body
+        );
+
+        if (sendEmail?.status === 200) {
+          message.success("Message submitted successfully");
+          defaultState();
+        } else {
+          message.error("Something went wrong");
+          defaultState();
+        }
+      }
+    } catch (e) {
+      console.log(e);
+      message.error("Something went wrong");
     }
   };
 
@@ -102,9 +155,12 @@ const ContactUs = () => {
                 value={state?.message}
               />
               <Spacer height="35px" />
-              <a href="https://admin.univision.hk/home" target="_blank">
-                <PrimaryButton text="Submit" width="100%" />
-              </a>
+
+              <PrimaryButton
+                text="Submit"
+                width="100%"
+                onClick={handleSubmit}
+              />
             </div>
             <div
               className={`bg-[url('/images/contact-us-banner.jpg')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px] ${

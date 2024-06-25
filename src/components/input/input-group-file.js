@@ -1,7 +1,6 @@
-"use client";
-
 import React, { useRef } from "react";
 import Image from "next/image";
+import { message } from "antd";
 
 const InputGroupFile = (props) => {
   const fileInputRef = useRef(null);
@@ -9,7 +8,12 @@ const InputGroupFile = (props) => {
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-      props?.handleChange(file);
+      if (file.size <= 1048576) {
+        props?.handleChange(file);
+      } else {
+        message.warning("Max file size limit is 1MB.");
+        fileInputRef.current.value = null;
+      }
     }
   };
 
@@ -21,7 +25,7 @@ const InputGroupFile = (props) => {
     <div className="flex flex-col gap-[16px]">
       <div className="text-[20px] font-normal">{props?.text}</div>
       <div
-        className="rounded-xl border border-primary px-3 py-4 flex items-center cursor-pointer"
+        className="rounded-xl border border-primary px-3 py-4 flex items-center cursor-pointer flex justify-between"
         onClick={handleClick}
       >
         <input
@@ -31,7 +35,7 @@ const InputGroupFile = (props) => {
           className="hidden"
           ref={fileInputRef}
         />
-        <span className="flex-grow whitespace-nowrap text-ellipsis overflow-hidden">
+        <span className="flex-grow whitespace-nowrap text-ellipsis overflow-hidden max-w-[500px]">
           {props?.value || props?.placeholder || "Select file"}
         </span>
         <Image

@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { message } from "antd";
+
+import isValidEmail from "@/utils/isvalidemail";
 import Spacer from "@/utils/spacer";
 
 import InputGroupText from "@/components/input/input-group-text";
@@ -8,6 +11,7 @@ import InputGroupPhone from "@/components/input/input-group-phone";
 import InputGroupFile from "@/components/input/input-group-file";
 
 import PrimaryButton from "@/components/buttons/primarybutton";
+import axios from "axios";
 
 const Careers = () => {
   const [state, setState] = useState({
@@ -19,6 +23,66 @@ const Careers = () => {
     cover: "",
     coverName: "",
   });
+
+  const defaultState = () => {
+    setState({
+      name: "",
+      email: "",
+      phone: "",
+      resume: "",
+      resumeName: "",
+      cover: "",
+      coverName: "",
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      if (!state?.name) {
+        message.error("Name is required");
+      } else if (!state?.email) {
+        message.error("Email is required");
+      } else if (!isValidEmail(state.email)) {
+        message.error("Please enter a valid email address");
+      } else if (!state?.phone) {
+        message.error("Phone is required");
+      } else if (!state?.resume) {
+        message.error("Resume is required");
+      } else {
+        const formData = new FormData();
+
+        formData.append("name", state.name);
+        formData.append("email", state.email);
+        formData.append("phone", state.phone);
+        if (state?.resume && state?.resumeName) {
+          formData.append("resume", state.resume);
+          formData.append("resumeName", state.resumeName);
+        }
+        if (state?.cover && state?.coverName) {
+          formData.append("cover", state.cover);
+          formData.append("coverName", state.coverName);
+        }
+
+        const sendEmail = await axios.post(
+          "https://api-prod-univision.azurewebsites.net/website-email/send-email-career",
+          formData
+        );
+
+        if (sendEmail?.status === 200) {
+          message.success("Application submitted successfully");
+          defaultState();
+        } else {
+          message.error("Something went wrong");
+          defaultState();
+        }
+      }
+    } catch (e) {
+      console.log(e);
+      message.error("Something went wrong");
+    }
+  };
 
   return (
     <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
@@ -38,6 +102,7 @@ const Careers = () => {
             <Spacer height="35px" />
             <InputGroupText
               text="Email"
+              type="email"
               placeholder="Enter your email address"
               handleChange={(e) => setState({ ...state, email: e })}
               value={state?.email}
@@ -68,9 +133,7 @@ const Careers = () => {
               value={state?.coverName}
             />
             <Spacer height="35px" />
-            <a href="https://admin.univision.hk/home" target="_blank">
-              <PrimaryButton text="Submit" width="100%" />
-            </a>
+            <PrimaryButton text="Submit" width="100%" onClick={handleSubmit} />
           </div>
           <div className="bg-[url('/images/career-banner.png')] w-full bg-no-repeat bg-cover rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px]">
             <div className="flex flex-col text-white px-[58px] py-[87px]">
