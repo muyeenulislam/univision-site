@@ -41,13 +41,13 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      <div className="bg-[linear-gradient(to_right_bottom,rgba(3,129,117,0.75),rgba(2,55,50,0.75)),url('/images/hero-img.jpg')] h-[110vh] md:h-full w-full bg-no-repeat bg-cover bg-center ">
+      <div className="bg-[linear-gradient(to_right_bottom,rgba(3,129,117,0.75),rgba(2,55,50,0.75)),url('/images/hero-img.jpg')] h-[100vh] md:h-[90%] w-full bg-no-repeat bg-cover bg-center">
         <div className="flex justify-between items-center px-[50px] md:px-[120px] py-[170px] fade-in-right">
-          <div className="flex flex-col gap-5 w-full lg:w-[40%]">
-            <div className="text-white text-[30px] md:text-[46px] font-extrabold ">
+          <div className="flex flex-col gap-5 w-full lg:w-[50%]">
+            <div className="text-white text-[30px] md:text-[38px] font-extrabold ">
               Your Dream, Our Responsibility
             </div>
-            <div className="text-white text-[16px] md:text-[20px]">
+            <div className="text-white text-[16px] md:text-[18px]">
               UniVision is aimed at developing a centralized platform that
               provides all relevant information to students in selecting
               colleges to apply to, while simultaneously providing their school
@@ -58,7 +58,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="w-[50%] hidden lg:block h-max">
+          <div className="w-[40%] hidden lg:block h-max">
             <Image
               src={"/images/banner-secondary.png"}
               height={890}
@@ -75,8 +75,8 @@ export default function Home() {
         </div>
         <Spacer height="20px" />
         <div className="text-[25px] md:text-[28px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
-          UniVision is an EdTech solution providing you with everything you need
-          to know about your prospective universities.
+          UniVision is an EdTech solution providing you with all the information
+          you need to know about your prospective universities.
         </div>
         <Spacer height="50px" />
         <Tabs
@@ -97,7 +97,8 @@ export default function Home() {
           </div>
           <Spacer height="20px" />
           <div className="text-[25px] md:text-[28px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
-            A centralized ecosystem for schools
+            A centralized ecosystem for{" "}
+            {activeKey === "1" ? "students" : "schools"}
           </div>
           <Spacer height="60px" />
           {activeKey === "1" ? <CoreFeaturesStudent /> : <CoreFeaturesSchool />}

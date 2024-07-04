@@ -17,7 +17,7 @@ const ExploreNow = () => {
             <Spacer height="42px" />
             <Image src={"/images/qr.png"} height={278} width={294} alt="" />
             <Spacer height="32px" />
-            <div className="text-[37px] font-normal">Or</div>
+            <div className="text-[37px] font-normal">OR</div>
             <Spacer height="32px" />
             <div className="flex flex-wrap gap-3 justify-center items-center">
               <Image

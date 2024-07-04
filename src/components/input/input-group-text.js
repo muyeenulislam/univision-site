@@ -4,7 +4,10 @@ import React from "react";
 const InputGroupText = (props) => {
   return (
     <div className="flex flex-col gap-[16px]">
-      <div className="text-[20px] font-normal">{props?.text}</div>
+      <div className="text-[20px] font-normal">
+        {props?.text}{" "}
+        {props?.required && <span className="text-red-700">*</span>}
+      </div>
       <div className="rounded-xl border border-primary px-3 py-4">
         <input
           type={props?.type || "text"}

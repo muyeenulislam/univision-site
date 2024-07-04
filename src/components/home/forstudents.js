@@ -18,14 +18,14 @@ const ForStudents = () => {
       subTitle: "Keep tabs on news from your watchlisted universities",
     },
     {
-      title: "Featured Universities",
+      title: "University Comparison",
       subTitle:
-        "See the newest up and coming universities and what they have to offer!",
+        "Compare between two or more universities so you know which one is the best fit for you!",
     },
     {
-      title: "Meeting and Application Calendar",
+      title: "Unique Data Points",
       subTitle:
-        "Calendar Keep track of upcoming applications and meetings in one place",
+        "Get information about housing costs, visa time-lines and nearby things to do over and beyond basic information!",
     },
     {
       title: "Personal Recommender",
@@ -39,15 +39,16 @@ const ForStudents = () => {
         "Star universities you’re interested in so you can come back to them later",
     },
     {
-      title: "University Comparison",
+      title: "Essay Grader",
       subTitle:
-        "Compare between two or more universities so you know which one is the best fit for you!",
+        "Elevate your writing with our AI-powered essay grader — your personal writing coach!",
     },
     {
-      title: "Unique Data Points",
+      title: "Chatbot",
       subTitle:
-        "Get information about housing costs, visa time-lines and nearby things to do over and beyond basic information!",
+        "Chat with your counselor anytime! Our friendly AI chatbot is here to guide and support you.",
     },
+
     {
       title: "Comprehensive Student Profile",
       subTitle:

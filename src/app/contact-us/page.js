@@ -129,6 +129,7 @@ const ContactUs = () => {
               <Spacer height="20px" />
               <InputGroupText
                 text="Name"
+                required
                 placeholder="Enter your name"
                 handleChange={(e) => setState({ ...state, name: e })}
                 value={state?.name}
@@ -136,6 +137,7 @@ const ContactUs = () => {
               <Spacer height="35px" />
               <InputGroupText
                 text="Email"
+                required
                 placeholder="Enter your email address"
                 handleChange={(e) => setState({ ...state, email: e })}
                 value={state?.email}
@@ -143,6 +145,7 @@ const ContactUs = () => {
               <Spacer height="35px" />
               <InputGroupPhone
                 text="Phone Number"
+                required
                 placeholder="Enter your phone number"
                 handleChange={(e) => setState({ ...state, phone: e })}
                 value={state?.phone}
@@ -150,6 +153,7 @@ const ContactUs = () => {
               <Spacer height="35px" />
               <InputGroupTextbox
                 text="Message"
+                required
                 placeholder="Enter your message"
                 handleChange={(e) => setState({ ...state, message: e })}
                 value={state?.message}
@@ -176,7 +180,7 @@ const ContactUs = () => {
         <div className="section-header">You Ask. We Answer.</div>
         <Spacer height="50px" />
         <div className="text-[22px] text-[#707070]">
-          Others frequently ask.....
+          Frequently asked questions.....
         </div>
         <Spacer height="20px" />
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 text-black">

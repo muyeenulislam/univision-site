@@ -38,8 +38,10 @@ const CoreFeaturesSchool = () => {
           } border-2 flex flex-col gap-6 items-center rounded-[60px]`}
           key={index}
         >
-          <Image src={item?.icon} height={60} width={60} alt="" />
-          <div className="text-center text-[22px] font-semibold">
+          <div className="h-[60px] overflow-hidden">
+            <Image src={item?.icon} height={30} width={60} alt="" />
+          </div>
+          <div className="text-center flex h-[60px] text-[22px] font-semibold">
             {item?.title}
           </div>
           <div className="text-center text-[12px] md:text-[14px] font-semibold">

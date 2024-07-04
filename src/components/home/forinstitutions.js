@@ -12,7 +12,7 @@ import Spacer from "@/utils/spacer";
 const ForInstitutions = () => {
   const screenSize = useScreenSize();
 
-  const mobileAppList = [
+  const scoolWebList = [
     {
       title: "Announcements",
       subTitle: "Keep tabs on news from your watchlisted universities",
@@ -32,11 +32,10 @@ const ForInstitutions = () => {
       subTitle: "Find universities suited to your profile and interests",
     },
   ];
-  const mobileWebList = [
+  const mobileAppList = [
     {
-      title: "Watchlist of Liked Universities",
-      subTitle:
-        "Star universities you’re interested in so you can come back to them later",
+      title: "Announcements",
+      subTitle: "Keep tabs on news from your watchlisted universities",
     },
     {
       title: "University Comparison",
@@ -48,6 +47,28 @@ const ForInstitutions = () => {
       subTitle:
         "Get information about housing costs, visa time-lines and nearby things to do over and beyond basic information!",
     },
+    {
+      title: "Personal Recommender",
+      subTitle: "Find universities suited to your profile and interests",
+    },
+  ];
+  const mobileWebList = [
+    {
+      title: "Watchlist of Liked Universities",
+      subTitle:
+        "Star universities you’re interested in so you can come back to them later",
+    },
+    {
+      title: "Essay Grader",
+      subTitle:
+        "Elevate your writing with our AI-powered essay grader — your personal writing coach!",
+    },
+    {
+      title: "Chatbot",
+      subTitle:
+        "Chat with your counselor anytime! Our friendly AI chatbot is here to guide and support you.",
+    },
+
     {
       title: "Comprehensive Student Profile",
       subTitle:
@@ -94,11 +115,12 @@ const ForInstitutions = () => {
             The School Web Portal
           </div>
           <div className="text-[20px] md:text-[24px] leading-[33px] font-light">
-            For the ones who like to have the information in their pockets and
-            at their fingertips; say goodbye to endless hours of searching on
-            Google
+            For the admin & counsellors who work day and night to assist their
+            students in applying to universities; a centralized platform
+            containing university information from 2,400+ universities to help
+            their students go abroad
           </div>
-          {mobileAppList?.map((item, index) => (
+          {scoolWebList?.map((item, index) => (
             <div className="flex gap-2" key={index}>
               <div className="flex justify-center pt-2">
                 <FaRegCheckCircle color="green" fontSize={22} />

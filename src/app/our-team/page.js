@@ -26,20 +26,20 @@ const OurTeam = () => {
     },
     {
       name: "Sameer Asad",
-      role: "Chief Information Officer (CIO)",
+      role: "Chief Information Officer",
       image: "/images/sameer.jpg",
       linkedin: "https://www.linkedin.com/in/sameer-asad-268694269",
     },
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] h-[110vh] w-full bg-no-repeat bg-cover lg:h-[110vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
+      <div className="bg-[url('/images/our-team-bg.png')] h-[96vh] w-full bg-no-repeat bg-cover lg:h-[96vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
         <div className="fade-in-right">
-          <div className="text-[30px] md:text-[36px] lg:text-[48px] text-center font-bold">
+          <div className="text-[26px] md:text-[32px] lg:text-[40px] text-center font-bold">
             Our Leadership Team
           </div>
           <Spacer height="20px" />
-          <div className="text-[16px] md:text-[20px] lg:text-[24px] text-center font-light">
+          <div className="text-[14px] md:text-[16px] lg:text-[20px] font-light text-justify">
             Young and dynamic, UniVision’s core founders team consists of
             individuals from a wide variety of backgrounds, nationalities and
             majors who all had one thing in common: they muddled their way
@@ -83,7 +83,10 @@ const OurTeam = () => {
           href="https://www.linkedin.com/company/visionedtechsolutions/"
           target="_blank"
         >
-          <PrimaryButton text="Learn more" maxwidth="400px" />
+          <PrimaryButton
+            text="Meet the rest of our team in LinkedIn"
+            maxwidth="400px"
+          />
         </a>
       </div>
       <Spacer height="140px" />

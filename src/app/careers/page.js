@@ -95,6 +95,7 @@ const Careers = () => {
             <Spacer height="35px" />
             <InputGroupText
               text="Name"
+              required
               placeholder="Enter your name"
               handleChange={(e) => setState({ ...state, name: e })}
               value={state?.name}
@@ -103,6 +104,7 @@ const Careers = () => {
             <InputGroupText
               text="Email"
               type="email"
+              required
               placeholder="Enter your email address"
               handleChange={(e) => setState({ ...state, email: e })}
               value={state?.email}
@@ -110,6 +112,7 @@ const Careers = () => {
             <Spacer height="35px" />
             <InputGroupPhone
               text="Phone Number"
+              required
               placeholder="Enter your phone number"
               handleChange={(e) => setState({ ...state, phone: e })}
               value={state?.phone}
@@ -117,6 +120,7 @@ const Careers = () => {
             <Spacer height="35px" />
             <InputGroupFile
               text="Upload Resume"
+              required
               placeholder="Upload File"
               handleChange={(e) =>
                 setState({ ...state, resume: e, resumeName: e?.name })

@@ -25,11 +25,13 @@ const Footer = () => {
   return (
     <div className="w-full flex flex-col bg-gradient-to-r from-[#03544C] to-[#02312C] text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5">
-        <div className="flex flex-col items-center p-5">
-          <Image src="/images/logo.png" alt="Logo" height={66} width={340} />
+        <div className="flex flex-col items-center p-5 w-full">
+          <div className="max-w-[295px]">
+            <Image src="/images/logo.png" alt="Logo" height={66} width={340} />
+          </div>
 
           <Spacer height="8px" />
-          <div className="text-white text-[18px] md:text-[21px]">
+          <div className="text-white text-[18px] md:text-[18px] max-w-[295px]">
             Your Dream, Our Responsibility
           </div>
           <Spacer height="20px" />
@@ -51,13 +53,13 @@ const Footer = () => {
         <div className="flex flex-col p-5">
           <div className=" text-[28px] font-semibold">Our Offices</div>
           <Spacer height="20px" />
-          <div className="text-[20px] font-light">
+          <div className="text-[18px] font-light">
             <span className="font-thin">36-21, Central Park Towers - DIFC</span>
             <br></br>
             <b>Dubai, UAE</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[20px] font-light">
+          <div className="text-[18px] font-light">
             <span className="font-thin">
               CraftLab Asia, Plaza Hamodal, Ground Floor, Petaling Jaya,
             </span>
@@ -65,7 +67,7 @@ const Footer = () => {
             <b>Selangor, Malaysia</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[20px] font-light">
+          <div className="text-[18px] font-light">
             <span className="font-thin"> 199 E, Block 2 P.E.C.H.S.,</span>
             <br></br>
             <b>Karachi, Pakistan</b>
@@ -74,9 +76,13 @@ const Footer = () => {
         <div className="w-max lg:mx-auto p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Legal</div>
           <Spacer height="20px" />
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/privacy-policy" target="_blank">
+            Privacy Policy
+          </a>
           <Spacer height="15px" />
-          <a href="/terms-and-conditions">Terms and Conditions</a>
+          <a href="/terms-and-conditions" target="_blank">
+            Terms and Conditions
+          </a>
         </div>
         <div className="w-max  p-5 flex flex-col">
           <div className=" text-[28px] font-semibold">Follow Us</div>
