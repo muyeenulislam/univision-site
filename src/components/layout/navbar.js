@@ -115,8 +115,8 @@ const Navbar = () => {
               }  transition-all ${
                 item?.key === "/explore"
                   ? pathname === "/" || pathname === "/our-team"
-                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary"
-                    : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg"
+                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary hover:text-white font-semibold"
+                    : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg font-semibold"
                   : scroll
                   ? `${
                       pathname === item?.key
