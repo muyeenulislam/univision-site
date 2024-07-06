@@ -79,7 +79,7 @@ const ForInstitutions = () => {
   return (
     <div className="flex flex-col relative px-[50px] md:px-[120px] text-black overflow-hidden fade-in-right">
       {screenSize?.width > 1024 && (
-        <div className="absolute h-[100%] right-[50%]">
+        <div className="absolute h-[100%] w-[23px] flex items-start justify-center left-[50%]">
           <Image
             src={"/images/vertical-line.svg"}
             alt=""
@@ -88,9 +88,9 @@ const ForInstitutions = () => {
           />
         </div>
       )}
-      <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative">
+      <div className="flex justify-center items-center flex-col-reverse gap-20 lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-max right-[49%] lg:right-[48.9%] xl:right-[49.3%] 2xl:right-[49.35%] 3xl:right-[49.5%] top-[0%]">
+          <div className="absolute h-max left-[50%] top-0">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -110,7 +110,7 @@ const ForInstitutions = () => {
           </div>
         )}
 
-        <div className="flex flex-col items-start gap-5 w-full md:p-5 md:pr-8">
+        <div className="flex flex-col items-start gap-5 w-full md:p-5">
           <div className="section-header" style={{ textAlign: "left" }}>
             The School Web Portal
           </div>
@@ -151,9 +151,9 @@ const ForInstitutions = () => {
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex justify-center items-center flex-col lg:flex-row relative">
+      <div className="flex justify-center items-center flex-col gap-20 lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-max right-[49%] lg:right-[48.9%] xl:right-[49.3%] 2xl:right-[49.35%] 3xl:right-[49.5%] top-[0%]">
+          <div className="absolute h-max left-[50%] top-0">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -181,7 +181,7 @@ const ForInstitutions = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start gap-5 w-full md:p-5 md:pl-8">
+        <div className="flex flex-col items-start gap-5 w-full md:p-5">
           <div className="section-header" style={{ textAlign: "left" }}>
             The Student Mobile App
           </div>
@@ -211,9 +211,9 @@ const ForInstitutions = () => {
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative">
+      <div className="flex justify-center items-center flex-col-reverse gap-20 lg:flex-row relative">
         {screenSize?.width > 1024 && (
-          <div className="absolute h-max right-[49%] lg:right-[48.9%] xl:right-[49.3%] 2xl:right-[49.35%] 3xl:right-[49.5%] top-[0%]">
+          <div className="absolute h-max left-[50%]  top-0">
             <Image
               src={"/images/green-dot.svg"}
               alt=""
@@ -232,7 +232,7 @@ const ForInstitutions = () => {
             />
           </div>
         )}
-        <div className="flex flex-col items-start gap-5 w-full md:p-5 md:pr-8">
+        <div className="flex flex-col items-start gap-5 w-full md:p-5">
           <div className="section-header" style={{ textAlign: "left" }}>
             The Student Web App
           </div>

@@ -33,7 +33,7 @@ const OurTeam = () => {
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] h-[96vh] w-full bg-no-repeat bg-cover lg:h-[96vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[200px] text-white">
+      <div className="bg-[url('/images/our-team-bg.png')] h-[96vh] w-full bg-no-repeat bg-cover lg:h-[85vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[160px] text-white">
         <div className="fade-in-right">
           <div className="text-[26px] md:text-[32px] lg:text-[40px] text-center font-bold">
             Our Leadership Team
@@ -65,8 +65,8 @@ const OurTeam = () => {
           >
             <Image
               src={item?.image}
-              height={340}
-              width={340}
+              height={300}
+              width={300}
               alt=""
               className="rounded-[36px] border border-primary"
             />
@@ -83,10 +83,7 @@ const OurTeam = () => {
           href="https://www.linkedin.com/company/visionedtechsolutions/"
           target="_blank"
         >
-          <PrimaryButton
-            text="Meet the rest of our team in LinkedIn"
-            maxwidth="400px"
-          />
+          <PrimaryButton text="Meet the team on LinkedIn" maxwidth="400px" />
         </a>
       </div>
       <Spacer height="140px" />
