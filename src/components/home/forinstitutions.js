@@ -11,7 +11,6 @@ import Spacer from "@/utils/spacer";
 
 const ForInstitutions = () => {
   const screenSize = useScreenSize();
-
   const scoolWebList = [
     {
       title: "Announcements",
