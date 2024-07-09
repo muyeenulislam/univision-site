@@ -51,7 +51,7 @@ const WebAppSignup = () => {
     {
       step: (
         <div className="flex flex-col gap-8">
-          <div className="text-primary font-bold text-[26px] md:text-[32px] lg:text-[56px]">
+          <div className="text-primary signup-guide-header">
             Register As Individual Student
           </div>
           <div>Step 1:</div>
@@ -152,10 +152,10 @@ const WebAppSignup = () => {
               } justify-between `}
             >
               <div className="flex flex-col justify-center gap-3 w-full z-[10]">
-                <div className="text-primary text-[20px] md:text-[36px] font-semibold">
+                <div className="text-primary signup-step-header">
                   {item?.step}
                 </div>
-                <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
+                <div className="text-black signup-step-header">
                   {item?.title}
                 </div>
                 <Timeline items={item?.timeline} />
@@ -175,10 +175,10 @@ const WebAppSignup = () => {
               } justify-between`}
             >
               <div className="flex flex-col justify-center gap-3 w-full z-[10]">
-                <div className="text-primary text-[20px] md:text-[36px] font-semibold">
+                <div className="text-primary signup-step-header">
                   {item?.step}
                 </div>
-                <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
+                <div className="text-black signup-step-header">
                   {item?.title}
                 </div>
                 <Timeline items={item?.timeline} />

@@ -16,24 +16,15 @@ body {
 
 /* antd tabs */
 
-:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-top
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-bottom
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-top
-  > div
-  > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-udr3vo).ant-tabs-bottom
-  > div
-  > .ant-tabs-nav::before {
-  border: none !important;
-}
-
 .ant-tabs-top > .ant-tabs-nav::before,
 .ant-tabs-bottom > .ant-tabs-nav::before,
 .ant-tabs-top > div > .ant-tabs-nav::before,
 .ant-tabs-bottom > div > .ant-tabs-nav::before {
   border: none !important;
+}
+
+.ant-tabs .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0 0 0 10px !important;
 }
 
 /* phone input */
@@ -123,13 +114,6 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-/* antd tabs */
-:where(.css-dev-only-do-not-override-pt9lnq).ant-tabs
-  .ant-tabs-tab
-  + .ant-tabs-tab {
-  margin: 0 0 0 10px !important;
 }
 
 /* mobile video styling */

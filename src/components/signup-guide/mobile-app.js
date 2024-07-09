@@ -267,7 +267,7 @@ const MobileAppSignup = () => {
         }}
       >
         <div className="relative z-[100]">
-          <div className="text-primary text-[36px] lg:text-[40px] xl:text-[48px] font-bold max-w-[550px] text-center md:text-left">
+          <div className="text-primary signup-guide-header text-center md:text-left mb-[1px] border-b border-b-primary w-max">
             Register as School Student
           </div>
           <Spacer height="20px" />
@@ -286,10 +286,10 @@ const MobileAppSignup = () => {
                 } justify-between `}
               >
                 <div className="flex flex-col justify-center gap-3 w-full z-[10]">
-                  <div className="text-primary text-[20px] md:text-[36px] font-semibold">
+                  <div className="text-primary signup-step-header">
                     {item?.step}
                   </div>
-                  <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
+                  <div className="text-black signup-step-header">
                     {item?.title}
                   </div>
                   <Timeline items={item?.timeline} />
@@ -303,7 +303,7 @@ const MobileAppSignup = () => {
         </div>
         <Spacer height="60px" />
         <div className="relative z-[100]">
-          <div className="text-primary text-[36px] lg:text-[40px] xl:text-[48px] font-bold max-w-[550px] text-center md:text-left">
+          <div className="text-primary signup-guide-header text-center md:text-left mb-[1px] border-b border-b-primary w-max">
             Register as Individual Student
           </div>
           <Spacer height="20px" />
@@ -322,10 +322,10 @@ const MobileAppSignup = () => {
                 } justify-between `}
               >
                 <div className="flex flex-col justify-center gap-3 w-full z-[10]">
-                  <div className="text-primary text-[20px] md:text-[36px] font-semibold">
+                  <div className="text-primary signup-step-header">
                     {item?.step}
                   </div>
-                  <div className="text-black text-[20px] xl:text-[40px] lg:text-[30px] font-semibold">
+                  <div className="text-black signup-step-header">
                     {item?.title}
                   </div>
                   <Timeline items={item?.timeline} />

@@ -110,10 +110,10 @@ const ForInstitutions = () => {
         )}
 
         <div className="flex flex-col items-start gap-5 w-full md:p-5">
-          <div className="section-header" style={{ textAlign: "left" }}>
+          <div className="points-header" style={{ textAlign: "left" }}>
             The School Web Portal
           </div>
-          <div className="text-[20px] md:text-[24px] leading-[33px] font-light">
+          <div className="points-sub-header leading-[33px] font-light">
             For the admin & counsellors who work day and night to assist their
             students in applying to universities; a centralized platform
             containing university information from 2,400+ universities to help
@@ -181,10 +181,10 @@ const ForInstitutions = () => {
         </div>
 
         <div className="flex flex-col items-start gap-5 w-full md:p-5">
-          <div className="section-header" style={{ textAlign: "left" }}>
+          <div className="points-header" style={{ textAlign: "left" }}>
             The Student Mobile App
           </div>
-          <div className="text-[20px] md:text-[24px] leading-[33px] font-light">
+          <div className="points-sub-header leading-[33px] font-light">
             For the ones who like to have the information in their pockets and
             at their fingertips; say goodbye to endless hours of searching on
             Google
@@ -232,10 +232,10 @@ const ForInstitutions = () => {
           </div>
         )}
         <div className="flex flex-col items-start gap-5 w-full md:p-5">
-          <div className="section-header" style={{ textAlign: "left" }}>
+          <div className="points-header" style={{ textAlign: "left" }}>
             The Student Web App
           </div>
-          <div className="text-[27px] leading-[33px] font-light">
+          <div className="points-sub-header leading-[33px] font-light">
             For the ones that burn the midnight oil when it comes to applying to
             universities; a convenient solution on the go for high-school and
             sixth-form students
@@ -243,11 +243,15 @@ const ForInstitutions = () => {
           {mobileWebList?.map((item, index) => (
             <div className="flex gap-2" key={index}>
               <div className="flex justify-center pt-2">
-                <FaRegCheckCircle color="green" fontSize={27} />
+                <FaRegCheckCircle color="green" fontSize={22} />
               </div>
               <div className="flex flex-col">
-                <div className="text-[24px] font-semibold">{item?.title}</div>
-                <div className="text-[22px] font-light">{item?.subTitle}</div>
+                <div className="text-[20px] md:text-[22px] font-semibold">
+                  {item?.title}
+                </div>
+                <div className="text-[18px] md:text-[20px] font-light">
+                  {item?.subTitle}
+                </div>
               </div>
             </div>
           ))}

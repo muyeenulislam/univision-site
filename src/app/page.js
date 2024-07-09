@@ -70,11 +70,9 @@ export default function Home() {
       </div>
       <Spacer height="20px" />
       <div className="flex justify-center items-center flex-col fade-in-right">
-        <div className="section-header px-[50px] md:px-[120px]">
-          Our Products
-        </div>
+        <div className="text-header px-[50px] md:px-[120px]">Our Products</div>
         <Spacer height="20px" />
-        <div className="text-[25px] md:text-[28px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
+        <div className="text-sub-header leading-[39px] text-center px-[50px] md:px-[120px]">
           UniVision is an EdTech solution providing you with all the information
           you need to know about your prospective universities.
         </div>
@@ -92,11 +90,11 @@ export default function Home() {
       <div className="bg-[url('/images/core-features-bg.svg')] w-full bg-no-repeat bg-cover">
         <Spacer height="120px" />
         <div className="flex justify-center items-center flex-col fade-in-right">
-          <div className="section-header px-[50px] md:px-[120px]">
+          <div className="text-header px-[50px] md:px-[120px]">
             Core Features
           </div>
           <Spacer height="20px" />
-          <div className="text-[25px] md:text-[28px] font-normal leading-[39px] text-center px-[50px] md:px-[120px]">
+          <div className="text-sub-header leading-[39px] text-center px-[50px] md:px-[120px]">
             A centralized ecosystem for{" "}
             {activeKey === "1" ? "students" : "schools"}
           </div>

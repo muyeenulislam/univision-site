@@ -8,15 +8,15 @@ const OurTeam = () => {
   const teamInfo = [
     {
       name: "Jahangir Ateeq",
-      role: "Co-founder & CEO",
+      role: "Chief Executive Officer",
       image: "/images/jahangir.png",
       linkedin: "https://www.linkedin.com/in/jahangirateeq/",
     },
     {
-      name: "Murtaza Abedin",
-      role: "Strategic Advisor",
-      image: "/images/murtaza.png",
-      linkedin: "https://www.linkedin.com/in/murtaza-abedin-b40181152/",
+      name: "Sameer Asad",
+      role: "Chief Information Officer",
+      image: "/images/sameer.jpg",
+      linkedin: "https://www.linkedin.com/in/sameer-asad-268694269",
     },
     {
       name: "Md. Muyeen - Ul - Islam",
@@ -25,21 +25,21 @@ const OurTeam = () => {
       linkedin: "https://www.linkedin.com/in/md-muyeen-ul-islam/",
     },
     {
-      name: "Sameer Asad",
-      role: "Chief Information Officer",
-      image: "/images/sameer.jpg",
-      linkedin: "https://www.linkedin.com/in/sameer-asad-268694269",
+      name: "Murtaza Abedin",
+      role: "Strategic Advisor",
+      image: "/images/murtaza.png",
+      linkedin: "https://www.linkedin.com/in/murtaza-abedin-b40181152/",
     },
   ];
   return (
     <div>
       <div className="bg-[url('/images/our-team-bg.png')] h-[96vh] w-full bg-no-repeat bg-cover lg:h-[85vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[160px] text-white">
         <div className="fade-in-right">
-          <div className="text-[26px] md:text-[32px] lg:text-[40px] text-center font-bold">
+          <div className="text-[28px] lg:text-[42px] font-bold text-center">
             Our Leadership Team
           </div>
           <Spacer height="20px" />
-          <div className="text-[14px] md:text-[16px] lg:text-[20px] font-light text-justify">
+          <div className="text-[14px] sm:text-[16px] lg:text-[22px] font-light text-justify">
             Young and dynamic, UniVision’s core founders team consists of
             individuals from a wide variety of backgrounds, nationalities and
             majors who all had one thing in common: they muddled their way
@@ -83,7 +83,10 @@ const OurTeam = () => {
           href="https://www.linkedin.com/company/visionedtechsolutions/"
           target="_blank"
         >
-          <PrimaryButton text="Meet the team on LinkedIn" maxwidth="400px" />
+          <PrimaryButton
+            text="Meet the rest of our team on LinkedIn"
+            maxwidth="400px"
+          />
         </a>
       </div>
       <Spacer height="140px" />

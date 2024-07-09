@@ -40,9 +40,9 @@ const SignupGuide = () => {
       <Spacer height="120px" />
       <div className="fade-in-right">
         <div className="flex flex-col justify-center items-center ">
-          <div className="section-header px-4">Sign Up Guide</div>
+          <div className="text-header px-4">Sign Up Guide</div>
           <Spacer height="12px" />
-          <div className="text-[24px] px-4">
+          <div className="text-sub-header px-4">
             {activeKey === "1"
               ? "For Mobile Application"
               : "For Web Application"}

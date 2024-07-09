@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { QRCode } from "antd";
 
 import Spacer from "@/utils/spacer";
 
@@ -11,26 +12,34 @@ const ExploreNow = () => {
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
         <div className="flex flex-col-reverse lg:flex-row gap-5 px-[30px] lg:px-[120px] pt-[120px] pb-[20px] lg:pb-[120px] fade-in-right">
           <div className="flex items-center justify-center flex-col w-full">
-            <div className="text-primary text-[28px] md:text-[46px] text-center font-bold">
+            <div className="text-primary text-header text-center">
               Your UniVision experience awaits!
             </div>
             <Spacer height="42px" />
-            <Image src={"/images/qr.png"} height={278} width={294} alt="" />
+            <QRCode
+              errorLevel="H"
+              value="https://student.univision.hk/"
+              icon="/images/favicon.svg"
+              color={"black"}
+              size={295}
+              iconSize={50}
+              bgColor="white"
+            />
             <Spacer height="32px" />
             <div className="text-[37px] font-normal">OR</div>
             <Spacer height="32px" />
             <div className="flex flex-wrap gap-3 justify-center items-center">
               <Image
                 src={"/images/google-play.png"}
-                height={60}
-                width={220}
                 alt=""
+                height={40}
+                width={180}
               />
               <Image
                 src={"/images/app-store.png"}
-                height={60}
-                width={220}
                 alt=""
+                height={40}
+                width={180}
               />
             </div>
           </div>
@@ -55,7 +64,7 @@ const ExploreNow = () => {
           />
         </div>
         <div className="w-full flex justify-center items-center flex-col">
-          <div className="text-primary text-[28px] md:text-[46px] text-center font-bold">
+          <div className="text-primary text-header text-center">
             Your UniVision experience awaits!
           </div>
           <Spacer height="40px" />

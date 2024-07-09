@@ -30,7 +30,7 @@ const CoreFeaturesSchool = () => {
     },
   ];
   return (
-    <div className="flex justify-center gap-5 flex-wrap xl:flex-nowrap px-[50px] md:px-[100px] xl:px-[140px]">
+    <div className="flex justify-center gap-5 flex-wrap xl:flex-nowrap px-[50px] md:px-[100px] xl:px-[140px] transition-all">
       {coreFeaturesList?.map((item, index) => (
         <div
           className={`p-[20px] w-[240px] ${
@@ -41,7 +41,7 @@ const CoreFeaturesSchool = () => {
           <div className="h-[60px] overflow-hidden">
             <Image src={item?.icon} height={30} width={60} alt="" />
           </div>
-          <div className="text-center flex flex-col h-[60px] text-[22px] font-semibold">
+          <div className="text-center flex flex-col h-[50px] text-[20px] font-semibold">
             {item?.title?.split("\n").map((line, index) => (
               <span key={index}>
                 {line}
@@ -49,7 +49,7 @@ const CoreFeaturesSchool = () => {
               </span>
             ))}
           </div>
-          <div className="text-center text-[12px] md:text-[14px] font-semibold">
+          <div className="text-center text-[14px] font-semibold">
             {item?.desc}
           </div>
         </div>
