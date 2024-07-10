@@ -267,7 +267,7 @@ const MobileAppSignup = () => {
         }}
       >
         <div className="relative z-[100]">
-          <div className="text-primary signup-guide-header text-center md:text-left mb-[1px] border-b border-b-primary w-max">
+          <div className="text-primary signup-guide-header text-teft md:text-left  border-b border-b-primary md:w-max z-[10] mb-5 md:mb-0">
             Register as School Student
           </div>
           <Spacer height="20px" />
@@ -303,7 +303,7 @@ const MobileAppSignup = () => {
         </div>
         <Spacer height="60px" />
         <div className="relative z-[100]">
-          <div className="text-primary signup-guide-header text-center md:text-left mb-[1px] border-b border-b-primary w-max">
+          <div className="text-primary signup-guide-header text-teft md:text-left  border-b border-b-primary md:w-max z-[10] mb-5 md:mb-0">
             Register as Individual Student
           </div>
           <Spacer height="20px" />

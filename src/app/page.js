@@ -44,10 +44,10 @@ export default function Home() {
       <div className="bg-[linear-gradient(to_right_bottom,rgba(3,129,117,0.75),rgba(2,55,50,0.75)),url('/images/hero-img.jpg')] h-[100vh] md:h-[90%] w-full bg-no-repeat bg-cover bg-center">
         <div className="flex justify-between items-center px-[50px] md:px-[120px] py-[170px] fade-in-right">
           <div className="flex flex-col gap-5 w-full lg:w-[50%]">
-            <div className="text-white text-[30px] md:text-[38px] font-extrabold ">
+            <div className="text-white text-[30px] md:text-[42px] font-extrabold ">
               Your Dream, Our Responsibility
             </div>
-            <div className="text-white text-[16px] md:text-[18px]">
+            <div className="text-white text-[16px] md:text-[20px]">
               UniVision is aimed at developing a centralized platform that
               provides all relevant information to students in selecting
               colleges to apply to, while simultaneously providing their school
