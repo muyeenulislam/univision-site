@@ -38,7 +38,7 @@ const OurTeam = () => {
           <div className="text-[28px] md:text-[42px] xl:text-[48px] text-center font-bold">
             Our Leadership Team
           </div>
-          <Spacer height="20px" />
+          <Spacer height="40px" />
           <div className="text-[14px] md:text-[18px] 2xl:text-[24px] font-light text-justify md:px-[8%] 2xl:px-[15%]">
             Young and dynamic, UniVision’s core founders team consists of
             individuals from a wide variety of backgrounds, nationalities and
