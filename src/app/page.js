@@ -70,11 +70,13 @@ export default function Home() {
       </div>
       <Spacer height="20px" />
       <div className="flex justify-center items-center flex-col fade-in-right">
-        <div className="text-header px-[50px] md:px-[120px]">Our Products</div>
-        <Spacer height="20px" />
-        <div className="text-sub-header leading-[39px] text-center px-[50px] md:px-[120px]">
-          UniVision is an EdTech solution providing you with all the information
-          you need to know about your prospective universities.
+        <div className="flex flex-col justify-center items-center text-center w-full md:w-[80%] xl:w-[60%]">
+          <div className="text-header">Our Products</div>
+          <Spacer height="20px" />
+          <div className="text-sub-header leading-[39px] ">
+            UniVision is an EdTech solution providing you with all the
+            information you need to know about your prospective universities.
+          </div>
         </div>
         <Spacer height="50px" />
         <Tabs

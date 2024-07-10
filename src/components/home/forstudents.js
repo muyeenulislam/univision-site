@@ -96,7 +96,7 @@ const ForStudents = () => {
             unoptimized
             alt=""
             height={823}
-            width={300}
+            width={250}
             className=" object-cover rotate-y-15"
           />
         </div>
@@ -114,10 +114,10 @@ const ForStudents = () => {
                 <FaRegCheckCircle color="green" fontSize={22} />
               </div>
               <div className="flex flex-col">
-                <div className="text-[20px] md:text-[22px] font-semibold">
+                <div className="checkpoint-header font-semibold">
                   {item?.title}
                 </div>
-                <div className="text-[18px] md:text-[20px] font-light">
+                <div className="checkpoint-sub-header font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -163,10 +163,10 @@ const ForStudents = () => {
                 <FaRegCheckCircle color="green" fontSize={22} />
               </div>
               <div className="flex flex-col">
-                <div className="text-[20px] md:text-[22px] font-semibold">
+                <div className="checkpoint-header font-semibold">
                   {item?.title}
                 </div>
-                <div className="text-[18px] md:text-[20px] font-light">
+                <div className="checkpoint-sub-header font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -186,7 +186,7 @@ const ForStudents = () => {
             src={"/images/student-web-app.png"}
             alt=""
             height={833}
-            width={600}
+            width={500}
           />
         </div>
       </div>
