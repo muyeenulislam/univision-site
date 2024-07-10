@@ -19,43 +19,31 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         ".text-header": {
-          fontSize: "28px",
+          fontSize: "30px",
           fontWeight: "800",
           "@screen md": {
-            fontSize: "30px",
+            fontSize: "34px",
           },
         },
         ".text-sub-header": {
-          fontSize: "20px",
+          fontSize: "22px",
           fontWeight: "400",
           "@screen md": {
-            fontSize: "20px",
-          },
-        },
-        ".checkpoint-header": {
-          fontSize: "18px",
-          "@screen md": {
-            fontSize: "20px",
-          },
-        },
-        ".checkpoint-sub-header": {
-          fontSize: "16px",
-          "@screen md": {
-            fontSize: "18px",
+            fontSize: "24px",
           },
         },
         ".points-header": {
           fontSize: "26px",
           fontWeight: "800",
           "@screen md": {
-            fontSize: "28px",
+            fontSize: "30px",
           },
         },
         ".points-sub-header": {
-          fontSize: "18px",
+          fontSize: "20px",
           fontWeight: "300",
           "@screen md": {
-            fontSize: "20px",
+            fontSize: "22px",
           },
         },
         ".signup-guide-header": {

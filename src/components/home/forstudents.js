@@ -96,7 +96,7 @@ const ForStudents = () => {
             unoptimized
             alt=""
             height={823}
-            width={250}
+            width={300}
             className=" object-cover rotate-y-15"
           />
         </div>
@@ -114,10 +114,10 @@ const ForStudents = () => {
                 <FaRegCheckCircle color="green" fontSize={22} />
               </div>
               <div className="flex flex-col">
-                <div className="checkpoint-header font-semibold">
+                <div className="text-[20px] md:text-[22px] font-semibold">
                   {item?.title}
                 </div>
-                <div className="checkpoint-sub-header font-light">
+                <div className="text-[18px] md:text-[20px] font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -163,10 +163,10 @@ const ForStudents = () => {
                 <FaRegCheckCircle color="green" fontSize={22} />
               </div>
               <div className="flex flex-col">
-                <div className="checkpoint-header font-semibold">
+                <div className="text-[20px] md:text-[22px] font-semibold">
                   {item?.title}
                 </div>
-                <div className="checkpoint-sub-header font-light">
+                <div className="text-[18px] md:text-[20px] font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -177,7 +177,7 @@ const ForStudents = () => {
               href="https://student.univision.hk/signup/personalInfo"
               target="_blank"
             >
-              <PrimaryButton text="Sign up" width="300px" />
+              <PrimaryButton text="Sign Up" width="300px" />
             </a>
           </div>
         </div>
@@ -186,7 +186,7 @@ const ForStudents = () => {
             src={"/images/student-web-app.png"}
             alt=""
             height={833}
-            width={500}
+            width={600}
           />
         </div>
       </div>
