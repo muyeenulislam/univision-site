@@ -2,22 +2,26 @@
 
 import React, { useState } from "react";
 import { message } from "antd";
+import axios from "axios";
 
 import isValidEmail from "@/utils/isvalidemail";
 import Spacer from "@/utils/spacer";
 
+import { roles } from "@/components/dropdownvalues/roles";
+import { whereDidYouHear } from "@/components/dropdownvalues/wheredidyouhear";
 import InputGroupText from "@/components/input/input-group-text";
 import InputGroupPhone from "@/components/input/input-group-phone";
 import InputGroupFile from "@/components/input/input-group-file";
-
+import InputGroupDropdown from "@/components/input/input-group-dropdown";
 import PrimaryButton from "@/components/buttons/primarybutton";
-import axios from "axios";
 
 const Careers = () => {
   const [state, setState] = useState({
     name: "",
     email: "",
     phone: "",
+    interestedRole: "",
+    whereDidYouHear: "",
     resume: "",
     resumeName: "",
     cover: "",
@@ -29,6 +33,8 @@ const Careers = () => {
       name: "",
       email: "",
       phone: "",
+      interestedRole: "",
+      whereDidYouHear: "",
       resume: "",
       resumeName: "",
       cover: "",
@@ -50,12 +56,18 @@ const Careers = () => {
         message.error("Phone is required");
       } else if (!state?.resume) {
         message.error("Resume is required");
+      } else if (!state?.interestedRole) {
+        message.error("Role is required");
+      } else if (!state?.whereDidYouHear) {
+        message.error("Please tell us where did you hear about us.");
       } else {
         const formData = new FormData();
 
         formData.append("name", state.name);
         formData.append("email", state.email);
         formData.append("phone", state.phone);
+        formData.append("interestedRole", state.interestedRole);
+        formData.append("whereDidYouHear", state.whereDidYouHear);
         if (state?.resume && state?.resumeName) {
           formData.append("resume", state.resume);
           formData.append("resumeName", state.resumeName);
@@ -135,6 +147,24 @@ const Careers = () => {
                 setState({ ...state, cover: e, coverName: e?.name })
               }
               value={state?.coverName}
+            />
+            <Spacer height="35px" />
+            <InputGroupDropdown
+              text="Role You Are Interested In"
+              required
+              placeholder="Select Role"
+              handleChange={(e) => setState({ ...state, interestedRole: e })}
+              value={state?.interestedRole}
+              dropItems={roles}
+            />
+            <Spacer height="35px" />
+            <InputGroupDropdown
+              text="Where Did You Hear About Us"
+              required
+              placeholder="Please Select"
+              handleChange={(e) => setState({ ...state, whereDidYouHear: e })}
+              value={state?.whereDidYouHear}
+              dropItems={whereDidYouHear}
             />
             <Spacer height="35px" />
             <PrimaryButton text="Submit" width="100%" onClick={handleSubmit} />
