@@ -159,7 +159,7 @@ const Careers = () => {
             />
             <Spacer height="35px" />
             <InputGroupDropdown
-              text="Where Did You Hear About Us"
+              text="Where Did You Hear About Us?"
               required
               placeholder="Please Select"
               handleChange={(e) => setState({ ...state, whereDidYouHear: e })}
