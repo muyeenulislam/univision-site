@@ -33,13 +33,13 @@ const OurTeam = () => {
   ];
   return (
     <div>
-      <div className="bg-[url('/images/our-team-bg.png')] h-[96vh] w-full bg-no-repeat bg-cover lg:h-[85vh]  flex flex-col justify-center px-[20px] lg:px-[120px] py-[160px] text-white">
+      <div className="bg-[url('/images/our-team-bg.png')] h-[70vh] w-full bg-no-repeat bg-cover lg:h-[80vh]  flex flex-col justify-center px-[20px] lg:px-[120px] pt-[100px] pb-[50px] text-white">
         <div className="fade-in-right">
-          <div className="text-[28px] lg:text-[42px] font-bold text-center">
+          <div className="text-[28px] md:text-[42px] xl:text-[48px] text-center font-bold">
             Our Leadership Team
           </div>
-          <Spacer height="20px" />
-          <div className="text-[14px] sm:text-[16px] lg:text-[22px] font-light text-justify">
+          <Spacer height="40px" />
+          <div className="text-[14px] md:text-[18px] 2xl:text-[24px] font-light text-justify md:px-[8%] 2xl:px-[15%]">
             Young and dynamic, UniVision’s core founders team consists of
             individuals from a wide variety of backgrounds, nationalities and
             majors who all had one thing in common: they muddled their way
@@ -55,7 +55,7 @@ const OurTeam = () => {
         </div>
       </div>
       <Spacer height="40px" />
-      <div className="flex justify-center items-center gap-4 p-2 flex-wrap fade-in-right">
+      <div className="flex justify-center items-center gap-5 p-2 flex-wrap fade-in-right">
         {teamInfo?.map((item, index) => (
           <a
             key={index}
@@ -65,8 +65,8 @@ const OurTeam = () => {
           >
             <Image
               src={item?.image}
-              height={300}
-              width={300}
+              height={260}
+              width={260}
               alt=""
               className="rounded-[36px] border border-primary"
             />
@@ -84,8 +84,8 @@ const OurTeam = () => {
           target="_blank"
         >
           <PrimaryButton
-            text="Meet the rest of our team on LinkedIn"
-            maxwidth="400px"
+            text="Meet the Rest of Our Team on LinkedIn"
+            maxwidth="100vw"
           />
         </a>
       </div>

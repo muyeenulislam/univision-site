@@ -51,15 +51,15 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col p-5">
-          <div className=" text-[24px] font-semibold">Our Offices</div>
+          <div className="text-[20px] font-semibold">Our Offices</div>
           <Spacer height="20px" />
-          <div className="text-[16px] font-light">
+          <div className="text-[14px] font-light">
             <span className="font-thin">36-21, Central Park Towers - DIFC</span>
             <br></br>
             <b>Dubai, UAE</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[16px] font-light">
+          <div className="text-[14px] font-light">
             <span className="font-thin">
               CraftLab Asia, Plaza Hamodal, Ground Floor, Petaling Jaya,
             </span>
@@ -67,25 +67,29 @@ const Footer = () => {
             <b>Selangor, Malaysia</b>
           </div>
           <Spacer height="20px" />
-          <div className="text-[16px] font-light">
+          <div className="text-[14px] font-light">
             <span className="font-thin"> 199 E, Block 2 P.E.C.H.S.,</span>
             <br></br>
             <b>Karachi, Pakistan</b>
           </div>
         </div>
         <div className="w-max lg:mx-auto p-5 flex flex-col">
-          <div className=" text-[24px] font-semibold">Legal</div>
+          <div className=" text-[20px] font-semibold">Legal</div>
           <Spacer height="20px" />
-          <a href="/privacy-policy" target="_blank">
+          <a href="/privacy-policy" className="text-[14px]" target="_blank">
             Privacy Policy
           </a>
           <Spacer height="15px" />
-          <a href="/terms-and-conditions" target="_blank">
+          <a
+            href="/terms-and-conditions"
+            className="text-[14px]"
+            target="_blank"
+          >
             Terms and Conditions
           </a>
         </div>
-        <div className="w-max  p-5 flex flex-col">
-          <div className=" text-[24px] font-semibold">Follow Us</div>
+        <div className="w-max lg:mx-auto p-5 flex flex-col">
+          <div className=" text-[20px] font-semibold">Follow Us</div>
           <Spacer height="20px" />
           <div className="flex gap-1">
             {socialItems?.map((item, index) => (
@@ -98,8 +102,8 @@ const Footer = () => {
               >
                 <Image
                   src={item?.icon}
-                  height={34}
-                  width={34}
+                  height={30}
+                  width={30}
                   alt="social icon"
                 />
                 <span className="social-handle">UniVision</span>
@@ -107,22 +111,28 @@ const Footer = () => {
             ))}
           </div>
           <Spacer height="60px" />
-          <div className=" text-[24px] font-semibold">Contact Us</div>
+          <div className=" text-[20px] font-semibold">Contact Us</div>
           <Spacer height="20px" />
           <div className="flex gap-3">
             <Image src={"/images/phone.svg"} height={18} width={18} alt="fb" />
-            <a target="_blank" href="https://wa.me/+971585399043">
+            <a
+              target="_blank"
+              href="https://wa.me/+971585399043"
+              className="text-[12px]"
+            >
               +971 58 539 9043
             </a>
           </div>
           <Spacer height="10px" />
           <div className="flex gap-3">
             <Image src={"/images/email.svg"} height={18} width={18} alt="fb" />
-            <a href="mailto:admin@univision.hk">admin@univision.hk</a>
+            <a href="mailto:admin@univision.hk" className="text-[12px]">
+              admin@univision.hk
+            </a>
           </div>
         </div>
       </div>
-      <div className=" text-[16px] text-center p-5 border-t border-white">
+      <div className=" text-[14px] text-center p-5 border-t border-white">
         Copyright ©️ UniVision {new Date().getFullYear()}. All rights reserved.
       </div>
     </div>

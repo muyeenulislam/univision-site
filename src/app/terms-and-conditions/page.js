@@ -53,7 +53,7 @@ const TermsAndConditions = () => {
                 the extent they are offered on the UniVision Platform shall also
                 be included in the definition of Platform. “Customer” refers to
                 the organizations (namely schools and educational/college
-                counselling agencies) that sign up to use the UniVision
+                counselling agencies) that Sign Up to use the UniVision
                 Services. “Device” is any Internet connected machine such as a
                 phone, tablet, computer, or any other device that can be used to
                 visit UniVision Application or and use the services. “Personal

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import Spacer from "@/utils/spacer";
 import { Timeline, ConfigProvider } from "antd";
 
 const WebAppSignup = () => {
@@ -49,14 +49,7 @@ const WebAppSignup = () => {
   ];
   const stepsIndividualStudent = [
     {
-      step: (
-        <div className="flex flex-col gap-8">
-          <div className="text-primary signup-guide-header">
-            Register As Individual Student
-          </div>
-          <div>Step 1:</div>
-        </div>
-      ),
+      step: "Step 1:",
       title: "Register As Individual Student",
       image: "/images/web-individual-step1.png",
       timeline: [
@@ -143,6 +136,10 @@ const WebAppSignup = () => {
           },
         }}
       >
+        <div className="text-primary signup-guide-header text-teft md:text-left  border-b border-b-primary md:w-max z-[10] mb-5 md:mb-0">
+          Register as School Student
+        </div>
+
         <div>
           {stepsSchoolStudent?.map((item, index) => (
             <div
@@ -165,6 +162,10 @@ const WebAppSignup = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-primary signup-guide-header text-teft md:text-left  border-b border-b-primary md:w-max z-[10] mb-5 md:mb-0">
+          Register as an Individual Student
         </div>
         <div>
           {stepsIndividualStudent?.map((item, index) => (

@@ -260,7 +260,7 @@ const ForInstitutions = () => {
               href="https://student.univision.hk/signup/personalInfo"
               target="_blank"
             >
-              <PrimaryButton text="Sign up" width="300px" />
+              <PrimaryButton text="Sign Up" width="300px" />
             </a>
           </div>
         </div>
