@@ -13,7 +13,7 @@ const InputGroupPhone = (props) => {
       </div>
       <div className="rounded-xl border border-primary px-3 py-4">
         <PhoneInput
-          country={"my"}
+          country={"ae"}
           placeholder="Enter phone number"
           value={props?.value}
           onChange={(phone) => props?.handleChange(phone)}
