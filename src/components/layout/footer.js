@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="text-[20px] font-semibold">Our Offices</div>
           <Spacer height="20px" />
           <div className="text-[14px] font-light">
-            <span className="font-thin">21-36, Central Park Towers - DIFC</span>
+            <span className="font-thin">21/36, Central Park Towers - DIFC</span>
             <br></br>
             <b>Dubai, UAE</b>
           </div>
