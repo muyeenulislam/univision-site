@@ -6,11 +6,7 @@ import { Dropdown } from "antd";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 
-import useScreenSize from "@/utils/usescreensize";
-
 const Navbar = () => {
-  const screenSize = useScreenSize();
-
   const pathname = usePathname();
 
   const [scroll, setScroll] = useState(false);
@@ -31,7 +27,7 @@ const Navbar = () => {
     { label: "Careers", key: "/careers" },
     { label: "Our Team", key: "/our-team" },
     { label: "Contact Us", key: "/contact-us" },
-    { label: "Sign Up Guide", key: "/signup-guide" },
+    // { label: "Sign Up Guide", key: "/signup-guide" },
     { label: "Explore Now", key: "/explore" },
   ];
 
@@ -68,14 +64,14 @@ const Navbar = () => {
       ),
       key: "3",
     },
-    {
-      label: (
-        <a href="/signup-guide" className="text-[18px] font-semibold p-2">
-          Sign Up Guide
-        </a>
-      ),
-      key: "4",
-    },
+    // {
+    //   label: (
+    //     <a href="/signup-guide" className="text-[18px] font-semibold p-2">
+    //       Sign Up Guide
+    //     </a>
+    //   ),
+    //   key: "4",
+    // },
   ];
 
   return (
@@ -100,69 +96,68 @@ const Navbar = () => {
           width={196}
         />
       </a>
-      {screenSize.width > 1175 ? (
-        <div className="flex justify-center items-center gap-6">
-          {navbarItem?.map((item, index) => (
-            <a
-              key={index}
-              href={item.key}
-              className={`text-[16px] ${
-                pathname === "/" || pathname === "/our-team"
-                  ? scroll
-                    ? "hover:text-primary hover:font-semibold"
-                    : "hover:text-white hover:font-semibold"
-                  : "hover:text-primary hover:font-semibold"
-              }  transition-all ${
-                item?.key === "/explore"
-                  ? pathname === "/" || pathname === "/our-team"
-                    ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary hover:text-white font-semibold"
-                    : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg font-semibold"
-                  : scroll
-                  ? `${
-                      pathname === item?.key
-                        ? "text-primary font-semibold"
-                        : "text-black"
-                    }`
-                  : `${
-                      pathname === item?.key
-                        ? pathname === "/" || pathname === "/our-team"
-                          ? "text-white font-semibold"
-                          : "text-primary font-semibold"
-                        : `${
-                            pathname === "/" || pathname === "/our-team"
-                              ? "text-white"
-                              : "text-black"
-                          }`
-                    }`
-              }`}
-            >
-              {item?.label}
-            </a>
-          ))}
-        </div>
-      ) : (
-        <div className={`flex justify-center items-center p-2`}>
-          <Dropdown
-            menu={{
-              items,
-            }}
-            trigger={["click"]}
-            placement="bottomRight"
-            overlayStyle={{ marginRight: "-50px" }}
+
+      <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-6">
+        {navbarItem?.map((item, index) => (
+          <a
+            key={index}
+            href={item.key}
+            className={`text-[16px] ${
+              pathname === "/" || pathname === "/our-team"
+                ? scroll
+                  ? "hover:text-primary hover:font-semibold"
+                  : "hover:text-white hover:font-semibold"
+                : "hover:text-primary hover:font-semibold"
+            }  transition-all ${
+              item?.key === "/explore"
+                ? pathname === "/" || pathname === "/our-team"
+                  ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary hover:text-white font-semibold"
+                  : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg font-semibold"
+                : scroll
+                ? `${
+                    pathname === item?.key
+                      ? "text-primary font-semibold"
+                      : "text-black"
+                  }`
+                : `${
+                    pathname === item?.key
+                      ? pathname === "/" || pathname === "/our-team"
+                        ? "text-white font-semibold"
+                        : "text-primary font-semibold"
+                      : `${
+                          pathname === "/" || pathname === "/our-team"
+                            ? "text-white"
+                            : "text-black"
+                        }`
+                  }`
+            }`}
           >
-            <RxHamburgerMenu
-              color={
-                pathname === "/" || pathname === "/our-team"
-                  ? scroll
-                    ? "#038175"
-                    : "white"
-                  : "#038175"
-              }
-              fontSize={28}
-            />
-          </Dropdown>
-        </div>
-      )}
+            {item?.label}
+          </a>
+        ))}
+      </div>
+
+      <div className={`lg:hidden flex justify-center items-center p-2`}>
+        <Dropdown
+          menu={{
+            items,
+          }}
+          trigger={["click"]}
+          placement="bottomRight"
+          overlayStyle={{ marginRight: "-50px" }}
+        >
+          <RxHamburgerMenu
+            color={
+              pathname === "/" || pathname === "/our-team"
+                ? scroll
+                  ? "#038175"
+                  : "white"
+                : "#038175"
+            }
+            fontSize={28}
+          />
+        </Dropdown>
+      </div>
     </navbar>
   );
 };
