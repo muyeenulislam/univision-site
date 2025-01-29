@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 
 import PrimaryButton from "../buttons/primarybutton";
@@ -135,7 +135,7 @@ const ForInstitutions = () => {
             </div>
           ))}
           <div className="w-full text-center md:text-left">
-            <a href="https://school.univision.hk/signup/email" target="_blank">
+            <a href="https://school.univision.hk/signup/form" target="_blank">
               <PrimaryButton text="Sign Up" width="300px" />
             </a>
           </div>
@@ -204,8 +204,31 @@ const ForInstitutions = () => {
               </div>
             </div>
           ))}
-          <div className="w-full text-center md:text-left">
-            <PrimaryButton text="Download" width="300px" />
+          <div className="flex flex-wrap gap-3 justify-center items-center">
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.univision.student&hl=en"
+              }
+              target="_blank"
+            >
+              <Image
+                src={"/images/google-play.png"}
+                alt=""
+                height={40}
+                width={180}
+              />
+            </Link>
+            <Link
+              href={"https://apps.apple.com/my/app/univision/id6475560656"}
+              target="_blank"
+            >
+              <Image
+                src={"/images/app-store.png"}
+                alt=""
+                height={40}
+                width={180}
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -257,7 +280,7 @@ const ForInstitutions = () => {
           ))}
           <div className="w-full text-center md:text-left">
             <a
-              href="https://student.univision.hk/signup/personalInfo"
+              href="https://student.univision.hk/signup/general-info"
               target="_blank"
             >
               <PrimaryButton text="Sign Up" width="300px" />

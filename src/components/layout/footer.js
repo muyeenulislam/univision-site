@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Spacer from "../../utils/spacer";
 
@@ -36,18 +37,30 @@ const Footer = () => {
           </div>
           <Spacer height="20px" />
           <div className="flex justify-between flex-wrap w-full max-w-[295px] gap-1">
-            <Image
-              src={"/images/google-play.png"}
-              alt=""
-              height={40}
-              width={140}
-            />
-            <Image
-              src={"/images/app-store.png"}
-              alt=""
-              height={40}
-              width={140}
-            />
+            <Link
+              href={
+                "https://play.google.com/store/apps/details?id=com.univision.student&hl=en"
+              }
+              target="_blank"
+            >
+              <Image
+                src={"/images/google-play.png"}
+                alt=""
+                height={40}
+                width={140}
+              />
+            </Link>
+            <Link
+              href={"https://apps.apple.com/my/app/univision/id6475560656"}
+              target="_blank"
+            >
+              <Image
+                src={"/images/app-store.png"}
+                alt=""
+                height={40}
+                width={140}
+              />
+            </Link>
           </div>
         </div>
         <div className="flex flex-col p-5">

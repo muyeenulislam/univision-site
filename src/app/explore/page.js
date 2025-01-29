@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { QRCode } from "antd";
 
 import Spacer from "@/utils/spacer";
@@ -29,18 +30,30 @@ const ExploreNow = () => {
             <div className="text-[37px] font-normal">OR</div>
             <Spacer height="32px" />
             <div className="flex flex-wrap gap-3 justify-center items-center">
-              <Image
-                src={"/images/google-play.png"}
-                alt=""
-                height={40}
-                width={180}
-              />
-              <Image
-                src={"/images/app-store.png"}
-                alt=""
-                height={40}
-                width={180}
-              />
+              <Link
+                href={
+                  "https://play.google.com/store/apps/details?id=com.univision.student&hl=en"
+                }
+                target="_blank"
+              >
+                <Image
+                  src={"/images/google-play.png"}
+                  alt=""
+                  height={40}
+                  width={180}
+                />
+              </Link>
+              <Link
+                href={"https://apps.apple.com/my/app/univision/id6475560656"}
+                target="_blank"
+              >
+                <Image
+                  src={"/images/app-store.png"}
+                  alt=""
+                  height={40}
+                  width={180}
+                />
+              </Link>
             </div>
           </div>
           <div className="w-full flex justify-center items-center">
@@ -69,15 +82,18 @@ const ExploreNow = () => {
           </div>
           <Spacer height="40px" />
           <div className="flex w-full flex-wrap gap-3 justify-center items-center">
-            <a
-              href="https://student.univision.hk/signup/personalInfo"
+            <Link
+              href="https://student.univision.hk/signup/general-info"
               target="_blank"
             >
               <PrimaryButton text="Create Student Account" />
-            </a>
-            <a href="https://school.univision.hk/signup/email" target="_blank">
+            </Link>
+            <Link
+              href="https://school.univision.hk/signup/form"
+              target="_blank"
+            >
               <PrimaryButton text="Create School Account" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
