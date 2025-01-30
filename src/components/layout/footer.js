@@ -67,7 +67,10 @@ const Footer = () => {
           <div className="text-[20px] font-semibold">Our Offices</div>
           <Spacer height="20px" />
           <div className="text-[14px] font-light">
-            <span className="font-thin">21/36, Central Park Towers - DIFC</span>
+            <span className="font-thin">
+              BCB3 508-509, PayNest Fintech (Branch), 11 17th Street, Umm
+              Ramool, Dubai CommerCity,
+            </span>
             <br></br>
             <b>Dubai, UAE</b>
           </div>
@@ -81,7 +84,9 @@ const Footer = () => {
           </div>
           <Spacer height="20px" />
           <div className="text-[14px] font-light">
-            <span className="font-thin"> 199 E, Block 2 P.E.C.H.S.,</span>
+            <span className="font-thin">
+              Suite 303, 3rd Floor, Emarah Suites, S.M.C.H.S,
+            </span>
             <br></br>
             <b>Karachi, Pakistan</b>
           </div>
