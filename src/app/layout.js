@@ -1,5 +1,5 @@
+import Script from "next/script";
 import { ConfigProvider } from "antd";
-
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -48,6 +48,21 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="/images/og-logo.png" />
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-4CQNRQTCBW`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4CQNRQTCBW', {
+              page_path: window.location.pathname,
+            });
+          `}
+        </Script>
       </head>
       <ConfigProvider
         theme={{
