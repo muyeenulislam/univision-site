@@ -28,7 +28,7 @@ const Navbar = () => {
     { label: "Our Team", key: "/our-team" },
     { label: "Contact Us", key: "/contact-us" },
     // { label: "Sign Up Guide", key: "/signup-guide" },
-    { label: "Explore Now", key: "/explore" },
+    { label: "Login", key: "https://school.univision.hk/" },
   ];
 
   const items = [
@@ -102,6 +102,9 @@ const Navbar = () => {
           <a
             key={index}
             href={item.key}
+            target={`${
+              item?.key === "https://school.univision.hk/" ? "_blank" : ""
+            }`}
             className={`text-[16px] ${
               pathname === "/" || pathname === "/our-team"
                 ? scroll
@@ -109,7 +112,7 @@ const Navbar = () => {
                   : "hover:text-white hover:font-semibold"
                 : "hover:text-primary hover:font-semibold"
             }  transition-all ${
-              item?.key === "/explore"
+              item?.key === "https://school.univision.hk/"
                 ? pathname === "/" || pathname === "/our-team"
                   ? "bg-white text-primary px-5 py-2 rounded-full shadow-lg hover:bg-primary hover:text-white font-semibold"
                   : "bg-primary text-white hover:bg-white border border-primary hover:text-primary px-5 py-2 rounded-full shadow-lg font-semibold"

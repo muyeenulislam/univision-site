@@ -90,14 +90,14 @@ const ForStudents = () => {
             />
           </div>
         )}
-        <div className="w-full flex justify-center items-center z-10 perspective p-5">
+        <div className="w-full flex justify-center items-center z-10 p-5">
           <Image
-            src={"/images/student-video.gif"}
+            src={"/images/student-video-replacement.png"}
             unoptimized
             alt=""
             height={823}
             width={300}
-            className=" object-cover rotate-y-15"
+            className="object-cover"
           />
         </div>
 

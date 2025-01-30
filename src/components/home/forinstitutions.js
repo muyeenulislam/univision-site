@@ -173,9 +173,9 @@ const ForInstitutions = () => {
         )}
         <div className="w-full flex justify-center items-center z-10">
           <Image
-            src={"/images/student-video.gif"}
+            src={"/images/student-video-replacement2.png"}
             alt=""
-            height={833}
+            height={823}
             width={385}
           />
         </div>
