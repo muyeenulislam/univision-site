@@ -15,7 +15,7 @@ const CoreFeaturesStudent = () => {
     },
     {
       title: "Centralized In\n One Platform",
-      desc: "With only just a few clicks, students can find carefully curated profiles for 2400+ universities under a single centralized platform",
+      desc: "With only just a few clicks, students can find carefully curated profiles for 2500+ universities under a single centralized platform",
       icon: "/images/centralized.svg",
     },
     {
