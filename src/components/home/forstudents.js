@@ -57,9 +57,9 @@ const ForStudents = () => {
   ];
 
   return (
-    <div className="flex flex-col relative px-[50px] md:px-[120px] text-black overflow-hidden fade-in-left">
+    <div className="flex flex-col relative px-[3.125rem] md:px-[7.5rem] text-black overflow-hidden fade-in-left">
       {screenSize?.width > 1024 && (
-        <div className="absolute h-[100%] w-[23px] flex items-start justify-center left-[50%]">
+        <div className="absolute h-[100%] w-[1.4375rem] flex items-start justify-center left-[50%]">
           <Image
             src={"/images/vertical-line.svg"}
             alt=""
@@ -81,7 +81,7 @@ const ForStudents = () => {
           </div>
         )}
         {screenSize?.width > 1024 && (
-          <div className="absolute left-[-10%]">
+          <div className="absolute h-[43.75rem] w-[43.75rem] left-[-10%]">
             <Image
               src={"/images/ellipse.svg"}
               alt=""
@@ -90,20 +90,20 @@ const ForStudents = () => {
             />
           </div>
         )}
-        <div className="w-full flex justify-center items-center z-10 p-5">
-          <Image
-            src={"/images/student-video-replacement.png"}
-            unoptimized
-            alt=""
-            height={823}
-            width={300}
-            className="object-cover"
-          />
+        <div className="w-full h-full flex justify-center items-center z-10">
+          <div className="h-[51.4375rem] w-[24.0625rem] flex justify-center items-center">
+            <Image
+              src={"/images/student-video-replacement.png"}
+              alt=""
+              height={823}
+              width={385}
+            />
+          </div>
         </div>
 
         <div className="flex flex-col items-start gap-5 w-full md:p-5 ">
           <div className="points-header">The Student Mobile App</div>
-          <div className="points-sub-header leading-[33px] font-light">
+          <div className="points-sub-header leading-[2.0625rem] font-light">
             For the ones who like to have the information in their pockets and
             at their fingertips; say goodbye to endless hours of searching on
             Google
@@ -111,13 +111,13 @@ const ForStudents = () => {
           {mobileAppList?.map((item, index) => (
             <div className="flex gap-2" key={index}>
               <div className="flex justify-center pt-2">
-                <FaRegCheckCircle color="green" fontSize={22} />
+                <FaRegCheckCircle color="green" fontSize={"1.375rem"} />
               </div>
               <div className="flex flex-col">
-                <div className="text-[20px] md:text-[22px] font-semibold">
+                <div className="text-[1.25rem] md:text-[1.375rem] font-semibold">
                   {item?.title}
                 </div>
-                <div className="text-[18px] md:text-[20px] font-light">
+                <div className="text-[1.125rem] md:text-[1.25rem] font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -129,6 +129,7 @@ const ForStudents = () => {
                 "https://play.google.com/store/apps/details?id=com.univision.student&hl=en"
               }
               target="_blank"
+              className="w-[11.25rem] h-[2.5rem]"
             >
               <Image
                 src={"/images/google-play.png"}
@@ -140,6 +141,7 @@ const ForStudents = () => {
             <Link
               href={"https://apps.apple.com/my/app/univision/id6475560656"}
               target="_blank"
+              className="w-[11.25rem] h-[2.5rem]"
             >
               <Image
                 src={"/images/app-store.png"}
@@ -151,7 +153,7 @@ const ForStudents = () => {
           </div>
         </div>
       </div>
-      <Spacer height="20px" />
+      <Spacer height="1.25rem" />
       <div className="flex justify-center items-center flex-col-reverse lg:flex-row relative  gap-20">
         {screenSize?.width > 1024 && (
           <div className="absolute h-max left-[50%] top-0">
@@ -183,13 +185,13 @@ const ForStudents = () => {
           {mobileWebList?.map((item, index) => (
             <div className="flex gap-2" key={index}>
               <div className="flex justify-center pt-2">
-                <FaRegCheckCircle color="green" fontSize={22} />
+                <FaRegCheckCircle color="green" fontSize={"1.375em"} />
               </div>
               <div className="flex flex-col">
-                <div className="text-[20px] md:text-[22px] font-semibold">
+                <div className="text-[1.25rem] md:text-[1.375rem] font-semibold">
                   {item?.title}
                 </div>
-                <div className="text-[18px] md:text-[20px] font-light">
+                <div className="text-[1.125rem] md:text-[1.25rem] font-light">
                   {item?.subTitle}
                 </div>
               </div>
@@ -200,20 +202,22 @@ const ForStudents = () => {
               href="https://student.univision.hk/signup/general-info"
               target="_blank"
             >
-              <PrimaryButton text="Sign Up" width="300px" />
+              <PrimaryButton text="Sign Up" width="18.75em" />
             </a>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center z-10">
-          <Image
-            src={"/images/student-web-app.png"}
-            alt=""
-            height={833}
-            width={600}
-          />
+        <div className="w-full h-full flex justify-center items-center z-10">
+          <div className="h-[52.0625rem] w-[37.5rem] flex justify-center items-center">
+            <Image
+              src={"/images/student-web-app.png"}
+              alt=""
+              height={833}
+              width={600}
+            />
+          </div>
         </div>
       </div>
-      <Spacer height="20px" />
+      <Spacer height="1.25rem" />
     </div>
   );
 };

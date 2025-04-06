@@ -34,7 +34,7 @@ const Navbar = () => {
   const items = [
     {
       label: (
-        <a href="/" className="text-[18px] font-semibold p-2">
+        <a href="/" className="text-[1.125em] font-semibold p-2">
           Home
         </a>
       ),
@@ -42,7 +42,7 @@ const Navbar = () => {
     },
     {
       label: (
-        <a href="/careers" className="text-[18px] font-semibold p-2">
+        <a href="/careers" className="text-[1.125em] font-semibold p-2">
           Careers
         </a>
       ),
@@ -50,7 +50,7 @@ const Navbar = () => {
     },
     {
       label: (
-        <a href="/our-team" className="text-[18px] font-semibold p-2">
+        <a href="/our-team" className="text-[1.125em] font-semibold p-2">
           Our Team
         </a>
       ),
@@ -58,7 +58,7 @@ const Navbar = () => {
     },
     {
       label: (
-        <a href="/contact-us" className="text-[18px] font-semibold p-2">
+        <a href="/contact-us" className="text-[1.125em] font-semibold p-2">
           Contact us
         </a>
       ),
@@ -66,7 +66,7 @@ const Navbar = () => {
     },
     // {
     //   label: (
-    //     <a href="/signup-guide" className="text-[18px] font-semibold p-2">
+    //     <a href="/signup-guide" className="text-[1.125em] font-semibold p-2">
     //       Sign Up Guide
     //     </a>
     //   ),
@@ -76,13 +76,13 @@ const Navbar = () => {
 
   return (
     <navbar
-      className={`flex justify-between items-center sticky top-0 right-0 w-full px-[50px] md:px-[120px] py-5 transition-all duration-300 z-[1000] ${
+      className={`flex justify-between items-center sticky top-0 right-0 w-full px-[3.125em] md:px-[7.5em] py-5 transition-all duration-300 z-[1000] ${
         scroll
           ? `bg-white bg-opacity-80 text-black backdrop-blur-md shadow-md`
           : `bg-transparent  text-white`
       }`}
     >
-      <a href="/">
+      <a href="/" className="h-[2.1875em] w-[12.25em]">
         <Image
           src={
             pathname === "/" || pathname === "/our-team"
@@ -105,7 +105,7 @@ const Navbar = () => {
             target={`${
               item?.key === "https://student.univision.hk/" ? "_blank" : ""
             }`}
-            className={`text-[16px] ${
+            className={`text-[1em] ${
               pathname === "/" || pathname === "/our-team"
                 ? scroll
                   ? "hover:text-primary hover:font-semibold"
@@ -147,7 +147,7 @@ const Navbar = () => {
           }}
           trigger={["click"]}
           placement="bottomRight"
-          overlayStyle={{ marginRight: "-50px" }}
+          overlayStyle={{ marginRight: "-3.125em" }}
         >
           <RxHamburgerMenu
             color={

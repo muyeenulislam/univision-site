@@ -1,7 +1,9 @@
 import Script from "next/script";
 import { ConfigProvider } from "antd";
 import { Montserrat } from "next/font/google";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 import "./globals.css";
+import "@ant-design/v5-patch-for-react-19";
 
 import Navbar from "@/components/layout/navbar";
 import Footer from "@/components/layout/footer";
@@ -78,10 +80,12 @@ export default function RootLayout({ children }) {
           },
         }}
       >
-        <body className={`${montserrat.className} relative mt-[-100px]`}>
-          <Navbar />
-          <div>{children}</div>
-          <Footer />
+        <body className={`${montserrat.className} relative mt-[-6.25em]`}>
+          <AntdRegistry>
+            <Navbar />
+            <div>{children}</div>
+            <Footer />
+          </AntdRegistry>
         </body>
       </ConfigProvider>
     </html>

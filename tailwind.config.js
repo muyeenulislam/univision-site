@@ -19,48 +19,48 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         ".text-header": {
-          fontSize: "30px",
+          fontSize: "1.875rem", // 30px
           fontWeight: "800",
           "@screen md": {
-            fontSize: "34px",
+            fontSize: "2.125rem", // 34px
           },
         },
         ".text-sub-header": {
-          fontSize: "22px",
+          fontSize: "1.375rem", // 22px
           fontWeight: "400",
           "@screen md": {
-            fontSize: "24px",
+            fontSize: "1.5rem", // 24px
           },
         },
         ".points-header": {
-          fontSize: "26px",
+          fontSize: "1.625rem", // 26px
           fontWeight: "800",
           "@screen md": {
-            fontSize: "30px",
+            fontSize: "1.875rem", // 30px
           },
         },
         ".points-sub-header": {
-          fontSize: "20px",
+          fontSize: "1.25rem", // 20px
           fontWeight: "300",
           "@screen md": {
-            fontSize: "22px",
+            fontSize: "1.375rem", // 22px
           },
         },
         ".signup-guide-header": {
-          fontSize: "32px",
+          fontSize: "2rem", // 32px
           fontWeight: "700",
           "@screen lg": {
-            fontSize: "38px",
+            fontSize: "2.375rem", // 38px
           },
           "@screen xl": {
-            fontSize: "44px",
+            fontSize: "2.75rem", // 44px
           },
         },
         ".signup-step-header": {
-          fontSize: "20px",
+          fontSize: "1.25rem", // 20px
           fontWeight: "600",
           "@screen md": {
-            fontSize: "32px",
+            fontSize: "2rem", // 32px
           },
         },
       };

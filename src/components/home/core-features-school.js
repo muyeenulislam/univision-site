@@ -30,18 +30,18 @@ const CoreFeaturesSchool = () => {
     },
   ];
   return (
-    <div className="flex justify-center gap-5 flex-wrap xl:flex-nowrap px-[50px] md:px-[100px] xl:px-[140px] transition-all">
+    <div className="flex justify-center gap-5 flex-wrap xl:flex-nowrap px-[3.125em] md:px-[6.25em] xl:px-[8.75em] transition-all">
       {coreFeaturesList?.map((item, index) => (
         <div
-          className={`p-[20px] w-[240px] ${
+          className={`p-[1.25em] w-[15em] ${
             index % 2 === 0 ? "border-primary" : "border-[#C0D06B]"
-          } border-2 flex flex-col gap-6 items-center rounded-[60px]`}
+          } border-2 flex flex-col gap-6 items-center rounded-[3.75em]`}
           key={index}
         >
-          <div className="h-[60px] overflow-hidden">
+          <div className="h-[3.75em] overflow-hidden">
             <Image src={item?.icon} height={30} width={60} alt="" />
           </div>
-          <div className="text-center flex flex-col h-[50px] text-[20px] font-semibold">
+          <div className="text-center flex flex-col h-[3.125em] text-[1.25em] font-semibold">
             {item?.title?.split("\n").map((line, index) => (
               <span key={index}>
                 {line}
@@ -49,7 +49,7 @@ const CoreFeaturesSchool = () => {
               </span>
             ))}
           </div>
-          <div className="text-center text-[14px] font-semibold">
+          <div className="text-center text-[0.875em] font-semibold">
             {item?.desc}
           </div>
         </div>

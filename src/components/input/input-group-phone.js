@@ -6,8 +6,8 @@ import "react-phone-input-2/lib/bootstrap.css";
 
 const InputGroupPhone = (props) => {
   return (
-    <div className="flex flex-col gap-[16px]">
-      <div className="text-[18px] font-normal">
+    <div className="flex flex-col gap-[1em]">
+      <div className="text-[1.25em] font-normal">
         {props?.text}{" "}
         {props?.required && <span className="text-red-700">*</span>}
       </div>

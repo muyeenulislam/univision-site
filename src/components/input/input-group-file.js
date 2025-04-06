@@ -22,8 +22,8 @@ const InputGroupFile = (props) => {
   };
 
   return (
-    <div className="flex flex-col gap-[16px]">
-      <div className="text-[18px] font-normal">
+    <div className="flex flex-col gap-[1em]">
+      <div className="text-[1.25em] font-normal">
         {props?.text}{" "}
         {props?.required && <span className="text-red-700">*</span>}
       </div>
@@ -38,15 +38,17 @@ const InputGroupFile = (props) => {
           className="hidden"
           ref={fileInputRef}
         />
-        <span className="flex-grow whitespace-nowrap text-ellipsis overflow-hidden max-w-[500px]">
+        <span className="flex-grow whitespace-nowrap text-ellipsis overflow-hidden max-w-[31.25em]">
           {props?.value || props?.placeholder || "Select file"}
         </span>
-        <Image
-          src={"/images/upload-icon.svg"}
-          height={24}
-          width={24}
-          alt="upload icon"
-        />
+        <div className="h-[1.5em] w-[1.5em]">
+          <Image
+            src={"/images/upload-icon.svg"}
+            height={24}
+            width={24}
+            alt="upload icon"
+          />
+        </div>
       </div>
     </div>
   );
