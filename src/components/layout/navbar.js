@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dropdown } from "antd";
 
@@ -34,41 +35,41 @@ const Navbar = () => {
   const items = [
     {
       label: (
-        <a href="/" className="text-[1.125em] font-semibold p-2">
+        <Link href="/" className="text-[1.125em] font-semibold p-2">
           Home
-        </a>
+        </Link>
       ),
       key: "0",
     },
     {
       label: (
-        <a href="/careers" className="text-[1.125em] font-semibold p-2">
+        <Link href="/careers" className="text-[1.125em] font-semibold p-2">
           Careers
-        </a>
+        </Link>
       ),
       key: "1",
     },
     {
       label: (
-        <a href="/our-team" className="text-[1.125em] font-semibold p-2">
+        <Link href="/our-team" className="text-[1.125em] font-semibold p-2">
           Our Team
-        </a>
+        </Link>
       ),
       key: "2",
     },
     {
       label: (
-        <a href="/contact-us" className="text-[1.125em] font-semibold p-2">
+        <Link href="/contact-us" className="text-[1.125em] font-semibold p-2">
           Contact us
-        </a>
+        </Link>
       ),
       key: "3",
     },
     // {
     //   label: (
-    //     <a href="/signup-guide" className="text-[1.125em] font-semibold p-2">
+    //     <Link href="/signup-guide" className="text-[1.125em] font-semibold p-2">
     //       Sign Up Guide
-    //     </a>
+    //     </Link>
     //   ),
     //   key: "4",
     // },
@@ -82,7 +83,7 @@ const Navbar = () => {
           : `bg-transparent  text-white`
       }`}
     >
-      <a href="/" className="h-[2.1875em] w-[12.25em]">
+      <Link href="/" className="h-[2.1875em] w-[12.25em]">
         <Image
           src={
             pathname === "/" || pathname === "/our-team"
@@ -95,11 +96,11 @@ const Navbar = () => {
           height={35}
           width={196}
         />
-      </a>
+      </Link>
 
       <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-6">
         {navbarItem?.map((item, index) => (
-          <a
+          <Link
             key={index}
             href={item.key}
             target={`${
@@ -136,7 +137,7 @@ const Navbar = () => {
             }`}
           >
             {item?.label}
-          </a>
+          </Link>
         ))}
       </div>
 
