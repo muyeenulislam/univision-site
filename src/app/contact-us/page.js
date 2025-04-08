@@ -118,15 +118,15 @@ const ContactUs = () => {
   return (
     <div>
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-        <div className="h-full px-[30px] lg:px-[120px] pt-[120px] fade-in-right">
-          <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row">
-            <div className="flex flex-col w-full px-[20px] md:px-[58px] py-[50px] md:py-[87px] justify-center bg-white md:rounded-tl-[36px] rounded-bl-[36px] md:rounded-br-[0px] rounded-br-[36px]">
-              <div className="text-primary text-[24px]">Contact Us</div>
-              <Spacer height="10px" />
+        <div className="h-full px-[1.875em] lg:px-[7.5em] py-[7.5em] ">
+          <div className="flex rounded-[2em] border border-[#E5E5E5] shadow-md flex-col-reverse md:flex-row fade-in-right">
+            <div className="flex flex-col w-full px-[1.25em] md:px-[3.625em] py-[3.125em] md:py-[5.4375em] justify-center bg-white md:rounded-tl-[2em] rounded-bl-[2em] md:rounded-br-0 rounded-br-[2em]">
+              <div className="text-primary text-[1.5em]">Contact Us</div>
+              <Spacer height="0.625em" />
               <div className="section-header" style={{ textAlign: "left" }}>
                 Get in touch
               </div>
-              <Spacer height="20px" />
+              <Spacer height="1.25em" />
               <InputGroupText
                 text="Name"
                 required
@@ -134,7 +134,7 @@ const ContactUs = () => {
                 handleChange={(e) => setState({ ...state, name: e })}
                 value={state?.name}
               />
-              <Spacer height="35px" />
+              <Spacer height="2.1875em" />
               <InputGroupText
                 text="Email"
                 required
@@ -142,7 +142,7 @@ const ContactUs = () => {
                 handleChange={(e) => setState({ ...state, email: e })}
                 value={state?.email}
               />
-              <Spacer height="35px" />
+              <Spacer height="2.1875em" />
               <InputGroupPhone
                 text="Phone Number"
                 required
@@ -150,7 +150,7 @@ const ContactUs = () => {
                 handleChange={(e) => setState({ ...state, phone: e })}
                 value={state?.phone}
               />
-              <Spacer height="35px" />
+              <Spacer height="2.1875em" />
               <InputGroupTextbox
                 text="Message"
                 required
@@ -158,7 +158,7 @@ const ContactUs = () => {
                 handleChange={(e) => setState({ ...state, message: e })}
                 value={state?.message}
               />
-              <Spacer height="35px" />
+              <Spacer height="2.1875em" />
 
               <PrimaryButton
                 text="Submit"
@@ -167,22 +167,22 @@ const ContactUs = () => {
               />
             </div>
             <div
-              className={`bg-[url('/images/contact-us-banner.jpg')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[36px] rounded-tl-[36px] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[36px] ${
-                screenSize?.width < 768 ? "h-[600px]" : ""
+              className={`bg-[url('/images/contact-us-banner.jpg')]  w-full bg-no-repeat bg-cover bg-center rounded-tr-[2.25em] rounded-tl-[2.25em] md:rounded-tl-[0px] rounded-br-[0px] md:rounded-br-[2.25em] ${
+                screenSize?.width < 768 ? "h-[37.5em]" : ""
               } `}
             ></div>
           </div>
 
-          <Spacer height="100px" />
+          <Spacer height="6.25em" />
         </div>
       </div>
-      <div className="px-[30px] lg:px-[120px] fade-in-right">
+      <div className="px-[1.875em] lg:px-[11.25em] fade-in-right">
         <div className="section-header">You Ask. We Answer.</div>
-        <Spacer height="50px" />
-        <div className="text-[22px] text-[#707070]">
+        <Spacer height="3.125em" />
+        <div className="text-[1.375em] text-[#707070]">
           Frequently asked questions.....
         </div>
-        <Spacer height="20px" />
+        <Spacer height="2.1875em" />
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-5 text-black">
           <ConfigProvider
             theme={{
@@ -210,7 +210,7 @@ const ContactUs = () => {
                             activeKey === item?.key
                               ? "text-primary"
                               : "text-black"
-                          } font-bold text-[16px] transition-all`}
+                          } font-bold text-[1em] transition-all`}
                         >
                           {item?.title}
                         </p>
@@ -240,7 +240,7 @@ const ContactUs = () => {
                             ? "rotate(180deg)"
                             : "rotate(0deg)",
                         transition: "transform 0.3s ease",
-                        maxWidth: "24px",
+                        maxWidth: "1.5em",
                       }}
                     />
                   )}
@@ -262,7 +262,7 @@ const ContactUs = () => {
                             activeKey === item?.key
                               ? "text-primary"
                               : "text-black"
-                          } font-bold text-[16px] transition-all`}
+                          } font-bold text-[1em] transition-all`}
                         >
                           {item?.title}
                         </p>
@@ -303,7 +303,7 @@ const ContactUs = () => {
           </ConfigProvider>
         </div>
       </div>
-      <Spacer height="80px" />
+      <Spacer height="5em" />
     </div>
   );
 };

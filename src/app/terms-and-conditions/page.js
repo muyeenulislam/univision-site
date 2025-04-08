@@ -5,13 +5,13 @@ const TermsAndConditions = () => {
   return (
     <div>
       <div className="bg-[url('/images/career-bg.svg')] w-full bg-no-repeat bg-cover">
-        <div className="h-full px-[30px] lg:px-[120px] pt-[120px] fade-in-right">
-          <div className="flex rounded-[36px] border border-[#E5E5E5] shadow-md ">
-            <div className="flex flex-col w-full p-[50px] justify-center bg-white rounded-[36px]">
-              <div className="text[32px] font-bold">Terms And Conditions</div>
+        <div className="h-full px-[1.875em] lg:px-[7.5em] pt-[7.5em] fade-in-right">
+          <div className="flex rounded-[2.25em] border border-[#E5E5E5] shadow-md ">
+            <div className="flex flex-col w-full p-[3.125em] justify-center bg-white rounded-[2.25em]">
+              <div className="text[2rem] font-bold">Terms And Conditions</div>
 
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 These Terms and Conditions are between each Customer (“You”) and
                 UniVision (“Us” “We” or “Our”) for the use of our company
                 platform in the university selection process. By downloading and
@@ -32,12 +32,12 @@ const TermsAndConditions = () => {
                 resources. We reserve the right to change prices and revise the
                 resources usage policy at any moment.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">
                 Definitions and Key Terms
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 For these Terms & Conditions: “Governing Law” means the Federal
                 laws of Malaysia. Additionally, “, We” “us” or “our” refers to
                 the UniVision Platform. “Customers”, “you”, “your” shall mean
@@ -67,12 +67,12 @@ const TermsAndConditions = () => {
                 marketing partners, and others who provide our content or whose
                 products or services we think may interest you.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">
                 Parties to this Agreement
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 By using the UniVision Platform and accessing all the services,
                 the Customer shall comply and accept these Terms and Conditions.
                 Where the Customer is acting on behalf of another, Customer
@@ -87,12 +87,12 @@ const TermsAndConditions = () => {
                 Conditions.
               </div>
 
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">
                 Amendment to these Terms and Conditions
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 UniVision reserves the right to change, amend or update these
                 Terms and Conditions at any moment and such modification shall
                 be effective immediately upon its posting in the UniVision
@@ -100,10 +100,10 @@ const TermsAndConditions = () => {
                 modification is posted, then the Customer shall agree on the
                 amended Terms and Conditions.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Eligibility</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Eligibility</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 Customers, as approved by UniVision, shall have the right to use
                 the Services provided on the Platform. The Services are
                 available only to those Customers who can form legally binding
@@ -113,10 +113,10 @@ const TermsAndConditions = () => {
                 deny Services to any Customer(s).
               </div>
 
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Privacy</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Privacy</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 If you submit or post any ideas, creative suggestions, designs,
                 photographs, information, advertisements, data or proposals,
                 including ideas for new or improved products, services,
@@ -131,12 +131,12 @@ const TermsAndConditions = () => {
                 manufacturing, and marketing products and services using such
                 ideas.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">
                 Privacy Policy & Data Protection
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 While using the Platform, UniVision collects data when the
                 Institution(s) and Customer(s) create, update, or use their
                 accounts. This may include but is not limited to their name,
@@ -169,12 +169,12 @@ const TermsAndConditions = () => {
                 customer service center will be recorded for quality and
                 training purposes.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">
                 Intellectual Rights & Ownership
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 The Customer acknowledges and agrees that UniVision owns all
                 legal rights, title, and interest in and to the Services and the
                 Platform, including any intellectual property rights which
@@ -189,10 +189,10 @@ const TermsAndConditions = () => {
                 service marks, logos, domain names, and other distinctive brand
                 features.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">License</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">License</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 UniVision grants you a revocable, non-exclusive, non-
                 transferable, limited license to download, install and use the
                 website & app strictly in accordance with the terms of this
@@ -202,16 +202,16 @@ const TermsAndConditions = () => {
                 the Mobile Application and Web Portals strictly in accordance
                 with these Terms and Conditions.
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 Notwithstanding any damages that the Customer might incur, the
                 entire liability of us and any of our suppliers under any
                 provision of this Agreement and your exclusive remedy for all of
                 the foregoing shall be limited to the amount actually paid by
                 you for the service.
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 To the maximum extent permitted by applicable law, in no event
                 shall we or our suppliers be liable for any special, incidental,
                 indirect, or consequential damages whatsoever (including, but
@@ -227,10 +227,10 @@ const TermsAndConditions = () => {
                 limitation of incidental or consequential damages, so the above
                 limitation or exclusion may not apply to the Customer.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Termination</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Termination</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 UniVision may suspend or terminate a customer’s access to the
                 Platform at any time if the Customer breaches these Terms and
                 Conditions. Also, UniVision may terminate or withdraw the use of
@@ -256,10 +256,10 @@ const TermsAndConditions = () => {
                 limiting the foregoing, neither us nor any provider makes any
                 representation or warranty of any kind, express or implied:
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">No Warranty</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">No Warranty</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 The service is provided to You “AS IS” and “AS AVAILABLE” and
                 with all faults and defects without a warranty of any kind. To
                 the maximum extent permitted under applicable law, we, on our
@@ -278,19 +278,19 @@ const TermsAndConditions = () => {
                 meet any performance or reliability standards or be error free
                 or that any errors or defects can or will be corrected.
               </div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 (i) as to the operation or availability of the service, or the
                 information, content materials or products included thereon;
               </div>
-              <div className="text[32px] font-normal">
+              <div className="text[2rem] font-normal">
                 (ii) that the service will be uninterrupted or error-free;
               </div>
-              <div className="text[32px] font-normal">
+              <div className="text[2rem] font-normal">
                 (iii) as to the accuracy, reliability, or currency of any
                 information or content provided through the service;
               </div>
-              <div className="text[32px] font-normal">
+              <div className="text[2rem] font-normal">
                 (iv) that the service, its servers, the content, messages or
                 e-mails sent from or on behalf of us are free of viruses,
                 scripts, trojan horses, worms, malware, timebombs or other
@@ -300,10 +300,10 @@ const TermsAndConditions = () => {
                 some or all of the above exclusions and limitations may not
                 apply to you.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Third Parties</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Third Parties</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 We may display, include, or make available third-party content
                 (including data, information, applications and other products
                 services) or provide links to third-party websites or services
@@ -318,10 +318,10 @@ const TermsAndConditions = () => {
                 them entirely at your own risk and subject to such third
                 parties’ terms and conditions.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Governing Law</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Governing Law</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 UniVision and the Customers agree that these Terms shall be
                 governed by and construed in accordance with the Federal laws of
                 Malaysia. In case of any dispute, controversy or claim arising
@@ -329,10 +329,10 @@ const TermsAndConditions = () => {
                 or invalidity thereof, the dispute shall be subject to the
                 exclusive jurisdiction of the Malaysian courts.
               </div>
-              <Spacer height="40px" />
-              <div className="text[32px] font-bold">Contact</div>
-              <Spacer height="30px" />
-              <div className="text[32px] font-normal">
+              <Spacer height="2.5em" />
+              <div className="text[2rem] font-bold">Contact</div>
+              <Spacer height="1.875em" />
+              <div className="text[2rem] font-normal">
                 UniVision is solely responsible for addressing any question,
                 complaints or claim related to the use of the Application. For
                 any query, please do first refer to the Privacy Policy document.
@@ -352,7 +352,7 @@ const TermsAndConditions = () => {
             </div>
           </div>
         </div>
-        <Spacer height="80px" />
+        <Spacer height="5em" />
       </div>
     </div>
   );
